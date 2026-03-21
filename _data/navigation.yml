@@ -1,0 +1,14 @@
+# main links
+main:
+  - title: "Problem"
+    url: /#problem
+    blank: false
+  - title: "Framework"
+    url: /#framework
+    blank: false
+  - title: "Canvas Preview"
+    url: /#canvas-preview
+    blank: false
+  - title: "Next Step"
+    url: /#next-step
+    blank: false

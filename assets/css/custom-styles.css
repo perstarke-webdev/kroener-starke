@@ -1190,6 +1190,205 @@ p {
   max-width: none;
 }
 
+.services-page__hero .hero-section__inner {
+  grid-template-columns: minmax(0, 1.22fr) minmax(300px, 0.78fr);
+}
+
+.services-page__hero h1 {
+  max-width: 14ch;
+}
+
+.services-page__hero .hero-section__subtitle {
+  max-width: 39ch;
+}
+
+.services-page__hero-board {
+  justify-self: end;
+  width: min(100%, 420px);
+}
+
+.services-page__hero-steps {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.services-page__hero-step {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.85rem;
+  align-items: center;
+  padding: 0.95rem 1rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.services-page__hero-step span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 999px;
+  background: rgba(124, 58, 237, 0.3);
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.96);
+}
+
+.services-page__hero-step p {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.services-page__problem-grid {
+  grid-template-columns: minmax(0, 0.76fr) minmax(0, 1.24fr);
+  align-items: center;
+}
+
+.services-page__problem-card {
+  display: grid;
+  align-content: start;
+  gap: 0.9rem;
+  min-height: 100%;
+  padding: clamp(22px, 3vw, 28px);
+  border: 1px solid rgba(124, 58, 237, 0.12);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: var(--shadow-soft);
+}
+
+.services-page__problem-card--list {
+  background:
+    radial-gradient(circle at top left, rgba(124, 58, 237, 0.08), transparent 42%),
+    rgba(255, 255, 255, 0.84);
+}
+
+.services-page__problem-card--list p {
+  color: var(--color-ink);
+}
+
+.services-page__problem-result {
+  margin-top: 0.35rem;
+  padding-top: 0.95rem;
+  border-top: 1px solid rgba(124, 58, 237, 0.12);
+  color: var(--color-violet);
+  font-weight: 600;
+}
+
+.services-page__system-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.06fr) minmax(240px, 0.94fr);
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.services-page__system-panel {
+  padding: clamp(24px, 3vw, 32px);
+  border: 1px solid rgba(124, 58, 237, 0.14);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: var(--shadow-soft);
+}
+
+.services-page__system-copy {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.services-page__system-pillars {
+  display: grid;
+  gap: 0.85rem;
+  align-content: center;
+  padding: clamp(24px, 3vw, 32px);
+  border: 1px solid rgba(124, 58, 237, 0.12);
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at top right, rgba(124, 58, 237, 0.08), transparent 34%),
+    rgba(247, 243, 255, 0.92);
+  box-shadow: var(--shadow-soft);
+}
+
+.services-page__system-pillars span {
+  display: inline-flex;
+  justify-content: center;
+  padding: 0.78rem 0.95rem;
+  border-radius: 999px;
+  background: rgba(124, 58, 237, 0.12);
+  color: var(--color-violet);
+  font-weight: 600;
+}
+
+.services-page__process-track .process-card {
+  gap: 0.9rem;
+}
+
+.services-page__process-track {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.services-page__outcomes-grid {
+  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+  align-items: center;
+}
+
+.services-page__outcomes-card {
+  display: grid;
+  gap: 0.95rem;
+  padding: clamp(24px, 3vw, 34px);
+  border: 1px solid rgba(124, 58, 237, 0.14);
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at top right, rgba(124, 58, 237, 0.08), transparent 34%),
+    rgba(255, 255, 255, 0.82);
+  box-shadow: var(--shadow-soft);
+}
+
+.services-page__outcomes-card .check-list {
+  gap: 1rem;
+  margin-top: 0.15rem;
+}
+
+.services-page__outcomes-card .check-list li {
+  gap: 0.85rem;
+}
+
+.services-page__outcomes-card .check-list span {
+  font-size: clamp(1.08rem, 1.35vw, 1.2rem);
+  color: var(--color-ink);
+}
+
+.services-page__difference-card {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(24px, 3vw, 40px);
+  padding: clamp(28px, 4vw, 40px);
+  border-radius: 30px;
+  background:
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.14), transparent 30%),
+    linear-gradient(135deg, #5a2e8f, #3a146b 58%, #250943);
+  box-shadow: var(--shadow-deep);
+  align-items: center;
+  color: var(--color-white);
+}
+
+.services-page__difference-card .section-heading {
+  max-width: none;
+  margin-bottom: 0;
+  align-content: center;
+}
+
+.services-page__difference-card h2 {
+  color: var(--color-white);
+}
+
+.services-page__difference-copy {
+  display: grid;
+  gap: 1rem;
+  align-content: center;
+}
+
+.services-page__difference-copy p {
+  color: rgba(255, 255, 255, 0.88);
+}
+
 .about-grid__cards {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1557,8 +1756,22 @@ p {
   .bio-section--reverse,
   .about-grid,
   .cta-grid,
+  .services-page__problem-grid,
+  .services-page__outcomes-grid,
+  .services-page__difference-card,
   .site-footer__main {
     grid-template-columns: 1fr;
+  }
+
+  .services-page__hero .hero-section__inner {
+    grid-template-columns: 1fr;
+    gap: clamp(26px, 6vw, 36px);
+  }
+
+  .services-page__hero-board {
+    justify-self: stretch;
+    width: 100%;
+    max-width: none;
   }
 
   .process-track {
@@ -1578,6 +1791,14 @@ p {
 
   .about-page__cta .cta-grid {
     grid-template-columns: 1fr;
+  }
+
+  .services-page__system-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .services-page__process-track {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -1641,7 +1862,8 @@ p {
     grid-template-columns: 1fr;
   }
 
-  .process-track {
+  .process-track,
+  .services-page__process-track {
     grid-template-columns: 1fr;
   }
 
@@ -1658,6 +1880,27 @@ p {
 @media (max-width: 640px) {
   h1 {
     max-width: 10ch;
+  }
+
+  .services-page__hero h1 {
+    max-width: 12ch;
+  }
+
+  .services-page__hero .hero-section__copy {
+    gap: 1.25rem;
+  }
+
+  .services-page__hero .hero-section__subtitle,
+  .services-page__hero-board {
+    max-width: none;
+  }
+
+  .services-page__hero-step {
+    padding: 0.88rem 0.92rem;
+  }
+
+  .services-page__hero-step p {
+    font-size: 0.98rem;
   }
 
   .hero-board,

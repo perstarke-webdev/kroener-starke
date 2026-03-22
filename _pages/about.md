@@ -2,7 +2,6 @@
 title: "Über uns"
 permalink: /ueber-uns/
 description: "Kröner & Starke verbindet Vertrieb, Positionierung und klare Umsetzung zu Websites, die Vertrauen schaffen und Anfragen generieren."
-noindex: true
 classes:
   - about-page
 ---

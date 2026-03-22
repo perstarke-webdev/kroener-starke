@@ -619,18 +619,17 @@ p {
 }
 
 .about-page__hero-media {
-  align-self: stretch;
+  align-self: center;
 }
 
 .about-page__hero-media .hero-board__media {
-  height: 100%;
-  min-height: clamp(320px, 34vw, 460px);
+  min-height: 0;
 }
 
 .about-page__hero-media .hero-board__media img {
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
+  height: auto;
+  object-fit: initial;
+  object-position: center;
 }
 
 .hero-board__grid {
@@ -907,6 +906,35 @@ p {
 .project-dialog__result {
   color: var(--color-violet);
   font-weight: 600;
+}
+
+.project-card__external,
+.project-dialog__external {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  color: var(--color-violet);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: rgba(124, 58, 237, 0.28);
+  text-underline-offset: 0.18em;
+  transition:
+    color 180ms ease,
+    text-decoration-color 180ms ease;
+}
+
+.project-card__external:hover,
+.project-card__external:focus-visible,
+.project-dialog__external:hover,
+.project-dialog__external:focus-visible {
+  color: var(--color-violet-hover);
+  text-decoration-color: currentColor;
+}
+
+.project-card__external i,
+.project-dialog__external i {
+  font-size: 0.88em;
 }
 
 .testimonial-carousel {
@@ -1811,6 +1839,11 @@ p {
 
 .project-dialog__result {
   padding-top: 0.6rem;
+}
+
+.project-dialog__external-wrap {
+  padding-inline: clamp(18px, 3vw, 30px);
+  padding-top: 0.35rem;
 }
 
 .project-dialog__gallery {

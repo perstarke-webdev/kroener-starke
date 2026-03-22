@@ -3,6 +3,7 @@
   name: "Onward Recruiting"
   summary: "Website, die Vertrauen aufbaut und Recruiting-Anfragen bringt."
   result: "3× Wachstum bei Kunden, Partnern und Team nach Relaunch"
+  website_url: "https://www.onward-recruiting.de/"
   cover: "/assets/images/projects/onward-recruiting-1.webp"
   cover_alt: "Startseite von Onward Recruiting"
   width: 3420
@@ -24,27 +25,12 @@
       width: 3420
       height: 1972
 
-- slug: "lumiere"
-  featured: true
-  name: "Lumière"
-  summary: "Klares Design, das die Marke stärkt und im Kopf bleibt."
-  result: ""
-  cover: "/assets/images/projects/lumiere.webp"
-  cover_alt: "Lumière Projektansicht"
-  width: 1024
-  height: 538
-  gallery:
-    - src: "/assets/images/projects/lumiere.webp"
-      alt: "Lumière Website"
-      caption: "Eine reduzierte visuelle Sprache, die der Marke Präsenz gibt, ohne sie zu überladen."
-      width: 1024
-      height: 538
-
 - slug: "cafe-rotkehlchen"
   featured: true
   name: "Café Rotkehlchen"
   summary: "Website, die Atmosphäre transportiert und Gäste anzieht."
   result: "Über 100 Bestellungen in den ersten 2 Wochen nach Launch"
+  website_url: "https://caferotkehlchen.de/"
   cover: "/assets/images/projects/cafe-rotkehlchen-1.webp"
   cover_alt: "Café Rotkehlchen Website"
   width: 3420
@@ -66,27 +52,39 @@
       width: 3420
       height: 1976
 
-- slug: "haser-garten"
+- slug: "wikus-programming"
   featured: true
-  name: "Haser Garten"
-  summary: "Website, die Vertrauen schafft und die Qualität der Gartenarbeit klar kommuniziert."
+  name: "WIKUS Programming"
+  summary: "Coaching-Auftritt, der Struktur, Community und Shop zu einem klaren digitalen System verbindet."
   result: ""
-  cover: "/assets/images/projects/haser-garten.webp"
-  cover_alt: "Haser Garten Website"
-  width: 1024
-  height: 551
+  website_url: "https://wikus-programming.com/"
+  cover: "/assets/images/projects/wikus-programming-1.webp"
+  cover_alt: "Startseite von WIKUS Programming"
+  width: 3420
+  height: 1972
   gallery:
-    - src: "/assets/images/projects/haser-garten.webp"
-      alt: "Haser Garten Website"
-      caption: "Ein klarer Auftritt, der Qualität, Vertrauen und die Handschrift des Betriebs sofort sichtbar macht."
-      width: 1024
-      height: 551
+    - src: "/assets/images/projects/wikus-programming-1.webp"
+      alt: "WIKUS Programming Hero"
+      caption: "Der Einstieg verbindet Professionalität und Nahbarkeit, damit Coaching, Haltung und Anfrageweg sofort klar werden."
+      width: 3420
+      height: 1972
+    - src: "/assets/images/projects/wikus-programming-2.webp"
+      alt: "WIKUS Programming Angebotsübersicht"
+      caption: "Struktur, Programme und Markenwelt greifen sauber ineinander und geben der wachsenden Community klare Orientierung."
+      width: 3390
+      height: 1868
+    - src: "/assets/images/projects/wikus-programming-3.webp"
+      alt: "WIKUS Programming weitere Detailansicht"
+      caption: "Website und Shop wirken wie ein zusammenhängendes System statt wie zwei getrennte Erlebnisse."
+      width: 3390
+      height: 1868
 
 - slug: "struve-international-recruiting"
-  featured: false
+  featured: true
   name: "Struve International Recruiting"
   summary: "Recruiting-Auftritt, der komplexe Vermittlung klar erklärt und sofort Vertrauen schafft."
   result: ""
+  website_url: "https://www.struve-ir.com/"
   cover: "/assets/images/projects/struve-international-recruiting-1.webp"
   cover_alt: "Startseite von Struve International Recruiting"
   width: 3398
@@ -108,11 +106,66 @@
       width: 3398
       height: 1974
 
+- slug: "kerem-hillel"
+  featured: false
+  name: "Kerem Hillel"
+  summary: "Klares Portfolio, das künstlerische Arbeit präzise zeigt und Produktionen schnell erfassbar macht."
+  result: ""
+  website_url: "https://keremhillel.de/"
+  cover: "/assets/images/projects/kerem-hillel-1.webp"
+  cover_alt: "Startseite von Kerem Hillel"
+  width: 3420
+  height: 1976
+  gallery:
+    - src: "/assets/images/projects/kerem-hillel-1.webp"
+      alt: "Kerem Hillel Hero"
+      caption: "Die reduzierte Gestaltung lässt die Arbeit sprechen und gibt Theatern, Partnern und Veranstaltern sofort Orientierung."
+      width: 3420
+      height: 1976
+    - src: "/assets/images/projects/kerem-hillel-2.png"
+      alt: "Kerem Hillel Portfolio-Struktur"
+      caption: "Aktuelle und vergangene Produktionen werden in einer ruhigen, professionellen Struktur schnell erfassbar."
+      width: 3382
+      height: 1818
+    - src: "/assets/images/projects/kerem-hillel-3.png"
+      alt: "Kerem Hillel weitere Portfolio-Ansicht"
+      caption: "Die Website schafft Sichtbarkeit und Glaubwürdigkeit, ohne die Kunst mit unnötiger Interface-Inszenierung zu überlagern."
+      width: 3382
+      height: 1818
+
+- slug: "neurotidal"
+  featured: false
+  name: "NeuroTidal"
+  summary: "Atmosphärischer Band-Auftritt, der Identität, Press-Kit und digitale Präsenz in einer starken Bühne bündelt."
+  result: ""
+  website_url: "https://neurotidal.com/"
+  cover: "/assets/images/projects/neurotidal-1.webp"
+  cover_alt: "Startseite von NeuroTidal"
+  width: 3420
+  height: 1968
+  gallery:
+    - src: "/assets/images/projects/neurotidal-1.webp"
+      alt: "NeuroTidal Hero"
+      caption: "Der Auftritt übersetzt Sound, Haltung und Atmosphäre in eine digitale Bühne mit klarer Wiedererkennung."
+      width: 3420
+      height: 1968
+    - src: "/assets/images/projects/neurotidal-2.webp"
+      alt: "NeuroTidal Press Kit und Inhalte"
+      caption: "Trotz starker visueller Identität bleibt die Struktur klar genug, damit Inhalte, Press-Kit und Kontakt direkt zugänglich sind."
+      width: 3420
+      height: 1968
+    - src: "/assets/images/projects/neurotidal-3.webp"
+      alt: "NeuroTidal weitere Ansicht"
+      caption: "Die Seite wirkt eigenständig und immersiv, ohne in Unklarheit oder visuelle Unruhe zu kippen."
+      width: 3420
+      height: 1968
+
 - slug: "aynur-by-mati"
   featured: false
   name: "Aynur by Mati"
   summary: "Sensibler Auftritt, der Haltung, Transparenz und Unterstützung in eine klare Nutzerführung übersetzt."
   result: ""
+  website_url: "https://aynur-stiftung.de/"
   cover: "/assets/images/projects/aynur-by-mati-1.webp"
   cover_alt: "Startseite von Aynur by Mati"
   width: 3420
@@ -139,6 +192,7 @@
   name: "Dominating Barbells"
   summary: "Markanter Markenauftritt, der Community, Coaching und Shop in einem klaren System zusammenführt."
   result: "Kundenstamm verdoppelt im Quartal nach Website-Launch"
+  website_url: "https://dominating-barbells.de/"
   cover: "/assets/images/projects/dominating-barbells-1.webp"
   cover_alt: "Startseite von Dominating Barbells"
   width: 3398
@@ -159,16 +213,3 @@
       caption: "Team, Wettkämpfe und Community werden sichtbar, damit aus einer Website ein echter Anziehungspunkt für Mitglieder wird."
       width: 3398
       height: 1974
-
-- slug: "simon-loerach"
-  featured: false
-  name: "Simon Lörach"
-  summary: "Persönlicher Auftritt mit klarer Positionierung, starkem Expertenbild und direkter Conversion-Führung."
-  result: ""
-  cover: "/assets/images/projects/simon-loerach.avif"
-  cover_alt: "Startseite von Simon Lörach"
-  gallery:
-    - src: "/assets/images/projects/simon-loerach.avif"
-      alt: "Simon Lörach Website"
-      caption: "Eine klare Personal-Branding-Seite, die Expertise, Angebot und Analyse-Call sofort in eine starke Conversion-Strecke übersetzt."
-

@@ -4,8 +4,8 @@ locale: "de-DE"
 title: "Kröner & Starke"
 title_separator: "-"
 description: "Websites, die verkaufen. Webdesign, das niemand vergisst und Anfragen, die nicht mehr aufhören."
-url:
-baseurl:
+url: "https://kroener-starke.ch"
+baseurl: ""
 repository: "perstarke/kroener-starke"
 logo: "/assets/images/brand/logo-ks.png"
 masthead_title: " "
@@ -16,7 +16,7 @@ background-image:
 background-image-mobile:
 background-image-overlay: rgba(255, 255, 255, 0.5)
 og_image: "/assets/images/brand/logo-ks.png"
-draft_mode: true
+draft_mode: false
 form_mode: "formspark"
 formspark_endpoint: "https://submit-form.com/qmOOtdX2O"
 placeholder_content: true

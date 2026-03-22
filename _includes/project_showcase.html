@@ -21,6 +21,12 @@
         {% if project.result %}
           <p class="project-card__result">{{ project.result }}</p>
         {% endif %}
+        {% if project.website_url %}
+          <a class="project-card__external" href="{{ project.website_url }}" target="_blank" rel="noopener noreferrer">
+            Website ansehen
+            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+          </a>
+        {% endif %}
       </div>
     </article>
   {% endfor %}
@@ -41,6 +47,14 @@
     <p class="project-dialog__summary">{{ project.summary }}</p>
     {% if project.result %}
       <p class="project-dialog__result">{{ project.result }}</p>
+    {% endif %}
+    {% if project.website_url %}
+      <p class="project-dialog__external-wrap">
+        <a class="project-dialog__external" href="{{ project.website_url }}" target="_blank" rel="noopener noreferrer">
+          Website ansehen
+          <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+        </a>
+      </p>
     {% endif %}
 
     <div class="project-dialog__gallery">

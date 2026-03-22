@@ -2,7 +2,6 @@
 title: "Kontakt"
 permalink: /kontakt/
 description: "Projekt anfragen bei Kröner & Starke oder direkt mit einem kostenlosen Website-Check starten."
-noindex: true
 classes:
   - contact-page
 ---

@@ -2,7 +2,6 @@
 title: "Leistungen"
 permalink: /leistungen/
 description: "Websites, die verkaufen – systematisch aufgebaut. Kröner & Starke entwickelt keine Einzelleistungen, sondern ein System für Vertrauen und Anfragen."
-noindex: true
 classes:
   - services-page
 ---

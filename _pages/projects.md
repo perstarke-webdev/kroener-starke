@@ -2,7 +2,6 @@
 title: "Projekte"
 permalink: /projekte/
 description: "Einblick in die Arbeit von Kröner & Starke: Websites, die nicht nur gut aussehen, sondern Ergebnisse bringen."
-noindex: true
 classes:
   - portfolio-page
 ---

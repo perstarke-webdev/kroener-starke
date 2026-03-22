@@ -62,7 +62,7 @@ classes:
         <ul class="check-list">
           {% for item in home.pain.bullet_points %}
             <li>
-              <i class="fa-solid fa-check" aria-hidden="true"></i>
+              <span class="inline-icon inline-icon--check" aria-hidden="true">&#10003;</span>
               <span>{{ item }}</span>
             </li>
           {% endfor %}
@@ -81,7 +81,7 @@ classes:
 <section class="section section--deep" id="proof">
   <div class="shell">
     <div class="section-heading section-heading--center">
-      <p class="section-label section-label--light"><i class="fa-solid fa-handshake" aria-hidden="true"></i> {{ home.trust.title }}</p>
+      <p class="section-label section-label--light">{{ home.trust.title }}</p>
       <h2 class="visually-hidden">{{ home.trust.title }}</h2>
       {% if home.trust.intro %}
         <p class="section-lead section-lead--light">{{ home.trust.intro }}</p>

@@ -42,8 +42,6 @@
 
   function initRevealAnimations() {
     var groups = [
-      { selector: ".hero-section__copy > *", step: 90 },
-      { selector: ".hero-board", step: 0 },
       { selector: ".bio-section__intro > *", step: 45 },
       { selector: ".bio-section__body > *", step: 50 },
       { selector: ".bio-section__media", step: 0 },

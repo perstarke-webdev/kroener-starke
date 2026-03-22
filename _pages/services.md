@@ -146,15 +146,15 @@ classes:
       <p>Sondern ein System, das:</p>
       <ul class="check-list">
         <li>
-          <i class="fa-solid fa-check" aria-hidden="true"></i>
+          <span class="inline-icon inline-icon--check" aria-hidden="true">&#10003;</span>
           <span>Vertrauen aufbaut</span>
         </li>
         <li>
-          <i class="fa-solid fa-check" aria-hidden="true"></i>
+          <span class="inline-icon inline-icon--check" aria-hidden="true">&#10003;</span>
           <span>deine Leistung klar kommuniziert</span>
         </li>
         <li>
-          <i class="fa-solid fa-check" aria-hidden="true"></i>
+          <span class="inline-icon inline-icon--check" aria-hidden="true">&#10003;</span>
           <span>Besucher gezielt in Anfragen verwandelt</span>
         </li>
       </ul>

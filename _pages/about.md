@@ -105,7 +105,7 @@ classes:
 <section class="section section--deep section--cta about-page__cta" id="cta">
   <div class="shell cta-grid">
     <div class="section-copy">
-      <p class="section-label section-label--light"><i class="fa-solid fa-handshake" aria-hidden="true"></i> Lerne uns kennen</p>
+      <p class="section-label section-label--light">Lerne uns kennen</p>
       <h2>Willst du eine Website, die nicht nur gut aussieht, sondern Ergebnisse bringt?</h2>
       <a class="button button--light" href="{{ '/kontakt/' | relative_url }}">Lass uns sprechen</a>
     </div>

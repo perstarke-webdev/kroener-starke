@@ -3,6 +3,7 @@
   src:
     local("Inter"),
     local("Inter Regular"),
+    url("/assets/fonts/inter/inter-400-subset.woff") format("woff"),
     url("/assets/fonts/inter/inter-400.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
@@ -14,6 +15,7 @@
   src:
     local("Inter SemiBold"),
     local("Inter"),
+    url("/assets/fonts/inter/inter-600-subset.woff") format("woff"),
     url("/assets/fonts/inter/inter-600.ttf") format("truetype");
   font-style: normal;
   font-weight: 600;
@@ -110,6 +112,29 @@ button {
   border: 0;
 }
 
+.inline-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  line-height: 1;
+}
+
+.inline-icon--check {
+  width: 1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.inline-icon--external {
+  margin-left: 0.42rem;
+  font-size: 0.92em;
+}
+
+.inline-icon--close {
+  font-size: 1.65rem;
+}
+
 [hidden] {
   display: none !important;
 }
@@ -119,7 +144,7 @@ button {
   outline-offset: 3px;
 }
 
-.reveal {
+.js .reveal {
   opacity: 0;
   transform: translate3d(0, 22px, 0);
   transition:
@@ -129,7 +154,7 @@ button {
   will-change: opacity, transform;
 }
 
-.reveal.is-visible {
+.js .reveal.is-visible {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
@@ -240,7 +265,7 @@ button {
   margin-inline: auto;
 }
 
-.section-label--light i {
+.section-label--light .inline-icon {
   color: rgba(255, 255, 255, 0.95);
 }
 
@@ -728,7 +753,7 @@ p {
   align-items: start;
 }
 
-.check-list i {
+.check-list .inline-icon--check {
   margin-top: 0.12rem;
   color: var(--color-violet);
 }
@@ -938,8 +963,8 @@ p {
   text-decoration-color: currentColor;
 }
 
-.project-card__external i,
-.project-dialog__external i {
+.project-card__external .inline-icon--external,
+.project-dialog__external .inline-icon--external {
   font-size: 0.88em;
 }
 

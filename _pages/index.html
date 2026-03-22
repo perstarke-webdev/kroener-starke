@@ -1,282 +1,353 @@
 ---
-title: "Trust & Clarity Canvas for Recruiting Firms"
+title: "Kröner & Starke"
 layout: page
 permalink: /
-
+description: "Websites, die verkaufen. Webdesign, das niemand vergisst und Anfragen, die nicht mehr aufhören."
 header:
-  overlay_image: /assets/images/header.webp
-  overlay_filter: linear-gradient(118deg, rgba(7, 16, 30, 0.92), rgba(9, 81, 118, 0.78))
-  actions:
-    - label: "Open Full Canvas"
-      url: "/canvas/"
-      btn_class: "primary"
-      blank: false
-    - label: "See Canvas Preview"
-      url: "#canvas-preview"
-      btn_class: "light-outline"
-      blank: false
-    - label: "Book 20-Min Review"
-      url: "#review"
-      btn_class: "success"
-      blank: false
-
-excerpt: "**A strategic clarity framework for recruiting firms that want better-fit mandates, stronger candidate trust, and consistent growth.**"
+  og_image: /assets/images/brand/logo-ks.png
+classes:
+  - home-page
 ---
+{% assign home = site.data.homepage %}
 
-<section class="site-section alternative-color first-section" id="problem">
-  <div class="landing-shell">
-    <p class="eyebrow" data-aos="fade-up">Built for Recruiting Firms</p>
-    <h2 data-aos="fade-up" data-aos-delay="80">If your firm feels interchangeable, this is where the shift starts.</h2>
-    <p class="lede" data-aos="fade-up" data-aos-delay="130">Most firms try to fix visibility first. But when positioning is unclear, visibility only scales confusion. The Trust & Clarity Canvas helps you sharpen strategy before optimizing website and promotion.</p>
+<section class="hero-section">
+  <div class="shell hero-section__inner">
+    <div class="hero-section__copy">
+      <p class="section-label section-label--hero">{{ home.hero.eyebrow }}</p>
+      <h1>{{ home.hero.title }}</h1>
+      <p class="hero-section__subtitle">{{ home.hero.subtitle }}</p>
 
-    <div class="signal-grid">
-      <article class="signal-card" data-aos="fade-up" data-aos-delay="160">
-        <h3>Price pressure keeps showing up</h3>
-        <p>Your value is real, but not positioned clearly enough to move conversations beyond fees.</p>
-      </article>
-      <article class="signal-card" data-aos="fade-up" data-aos-delay="220">
-        <h3>Inbound is active but misaligned</h3>
-        <p>You get inquiries, but too many are wrong-fit mandates or low-intent candidates.</p>
-      </article>
-      <article class="signal-card" data-aos="fade-up" data-aos-delay="280">
-        <h3>Rigor stays invisible</h3>
-        <p>Selection depth, retention thinking, and process quality are not obvious early enough.</p>
-      </article>
-    </div>
-
-    <article class="fit-qualifier" data-aos="fade-up" data-aos-delay="320">
-      <div class="qual-column">
-        <h3>Best fit if you want:</h3>
-        <ul class="list-icon yes">
-          <li>Better mandates, not just more leads.</li>
-          <li>Clearer strategic differentiation in your niche.</li>
-          <li>A website and promotion model that actually reflects your quality.</li>
-        </ul>
+      <div class="hero-section__actions">
+        <a class="button button--primary" href="{{ home.hero.primary_cta.url | relative_url }}">{{ home.hero.primary_cta.label }}</a>
+        <a class="button button--secondary" href="{{ home.hero.secondary_cta.url }}">{{ home.hero.secondary_cta.label }}</a>
       </div>
-      <div class="qual-column muted">
-        <h3>Not ideal if you only want:</h3>
-        <ul class="list-icon no">
-          <li>A cosmetic redesign without strategic work.</li>
-          <li>Volume-first promotion with no qualification logic.</li>
-          <li>Short-term hacks that ignore market positioning.</li>
+
+      {% if home.hero.pills and home.hero.pills.size > 0 %}
+        <ul class="hero-section__pills" aria-label="Schwerpunkte">
+          {% for pill in home.hero.pills %}
+            <li>{{ pill }}</li>
+          {% endfor %}
         </ul>
+      {% endif %}
+    </div>
+
+    <aside class="hero-board" aria-label="Zusammenarbeitsmodell">
+      <div class="hero-board__media">
+        <img src="{{ '/assets/images/people/duo-portrait.webp' | relative_url }}" alt="Simon Kröner und Per Starke" width="2250" height="1500" loading="eager">
       </div>
-    </article>
-
-    <div class="metric-row" data-aos="fade-up" data-aos-delay="360">
-      <article class="metric-card">
-        <p class="metric-value js-count-up" data-target="9">0</p>
-        <p class="metric-label">Core decisions</p>
-      </article>
-      <article class="metric-card">
-        <p class="metric-value js-count-up" data-target="3">0</p>
-        <p class="metric-label">Phases</p>
-      </article>
-      <article class="metric-card">
-        <p class="metric-value js-count-up" data-target="1">0</p>
-        <p class="metric-label">Strategic order</p>
-      </article>
-    </div>
+      <p class="hero-board__title">{{ home.hero.board_title }}</p>
+    </aside>
   </div>
 </section>
 
-<hr class="section-sep">
-
-<section class="site-section" id="framework">
-  <div class="landing-shell">
-    <p class="eyebrow" data-aos="fade-up">Framework Logic</p>
-    <h2 data-aos="fade-up" data-aos-delay="80">AIM first, CREATE second, PROMOTE third.</h2>
-    <p class="lede" data-aos="fade-up" data-aos-delay="130">This order is not theory. It reflects how recruiting firms actually grow without burning time and margin. Most recurring pains are AIM-dominant, CREATE-secondary, and PROMOTE-accelerated.</p>
-
-    <div class="phase-track">
-      <article class="phase-node" data-aos="zoom-in-up" data-aos-delay="140">
-        <p class="phase-kicker">AIM</p>
-        <h3>Clarify your position</h3>
-        <p>Define market focus, outcome-based value, and proof so your firm is strategically distinct.</p>
-      </article>
-      <article class="phase-node" data-aos="zoom-in-up" data-aos-delay="200">
-        <p class="phase-kicker">CREATE</p>
-        <h3>Build trust-first structure</h3>
-        <p>Turn clarity into a website that guides both firms and candidates with less friction.</p>
-      </article>
-      <article class="phase-node" data-aos="zoom-in-up" data-aos-delay="260">
-        <p class="phase-kicker">PROMOTE</p>
-        <h3>Scale visibility with authority</h3>
-        <p>Use daily presence and insight to amplify what is already sharp, credible, and aligned.</p>
-      </article>
-    </div>
-
-    <p class="clarity-note" data-aos="fade-up" data-aos-delay="300"><strong>Short version:</strong> first clarify, then structure, then scale.</p>
-  </div>
-</section>
-
-<hr class="section-sep">
-
-<section class="site-section alternative-color" id="clarity-shift">
-  <div class="landing-shell">
-    <p class="eyebrow" data-aos="fade-up">Strategic Shift</p>
-    <h2 data-aos="fade-up" data-aos-delay="80">What changes when clarity leads instead of guesswork</h2>
-
-    <div class="shift-panel">
-      <article class="shift-side before" data-aos="fade-right" data-aos-delay="120">
-        <h3>Before</h3>
-        <ul>
-          <li>Messaging is broad and easy to confuse with competitors.</li>
-          <li>Website attracts mixed-fit demand and weak conversion quality.</li>
-          <li>Promotion feels active but inconsistent in impact.</li>
+<section class="section section--cream" id="website-check">
+  <div class="shell section-grid section-grid--audit">
+    <div class="section-copy">
+      <h2>{{ home.pain.title }}</h2>
+      {% if home.pain.intro != blank %}
+        <p class="section-lead">{{ home.pain.intro }}</p>
+      {% endif %}
+      {% if home.pain.bullet_points and home.pain.bullet_points.size > 0 %}
+        <ul class="check-list">
+          {% for item in home.pain.bullet_points %}
+            <li>
+              <i class="fa-solid fa-check" aria-hidden="true"></i>
+              <span>{{ item }}</span>
+            </li>
+          {% endfor %}
         </ul>
-      </article>
-      <article class="shift-side after" data-aos="fade-left" data-aos-delay="180">
-        <h3>After</h3>
-        <ul>
-          <li>Positioning is specific, defensible, and easier to trust.</li>
-          <li>Website paths are clearer for firms and candidates.</li>
-          <li>Promotion reinforces authority instead of compensating for ambiguity.</li>
-        </ul>
-      </article>
+      {% endif %}
+    </div>
+
+    <div class="audit-card">
+      <h3>{{ home.pain.audit_title }}</h3>
+      <p>{{ home.pain.audit_text }}</p>
+      {% include site_check_form.html id_prefix="hero-check" form=home.pain.form context="hero-check" variant="light" %}
     </div>
   </div>
 </section>
 
-<hr class="section-sep">
+<section class="section section--deep" id="proof">
+  <div class="shell">
+    <div class="section-heading section-heading--center">
+      <p class="section-label section-label--light"><i class="fa-solid fa-handshake" aria-hidden="true"></i> {{ home.trust.title }}</p>
+      <h2 class="visually-hidden">{{ home.trust.title }}</h2>
+      {% if home.trust.intro %}
+        <p class="section-lead section-lead--light">{{ home.trust.intro }}</p>
+      {% endif %}
+    </div>
 
-<section class="site-section flex-showcase" id="flex-showcase">
-  <div class="landing-shell">
-    <p class="eyebrow eyebrow--dark" data-aos="fade-up">#FLEX | Design + Strategy</p>
-    <h2 data-aos="fade-up" data-aos-delay="80">Yes, a clarity-first page can still look and feel elite.</h2>
-    <p class="lede lede--dark" data-aos="fade-up" data-aos-delay="130">This block is intentional: strong visual craft that still serves conversion logic, message hierarchy, and trust-building. Sharp strategy and standout design can coexist.</p>
-
-    <div class="flex-lab">
-      <article class="lab-stage" data-aos="zoom-in-up" data-aos-delay="160">
-        <div class="lab-glow lab-glow-one"></div>
-        <div class="lab-glow lab-glow-two"></div>
-
-        <div class="lab-shell">
-          <div class="lab-topbar">
-            <span></span><span></span><span></span>
-            <p>Recruiting Clarity Engine</p>
+    <div class="logo-marquee" aria-label="{{ home.trust.label }}">
+      <div class="logo-marquee__track">
+        {% for logo in home.trust.logos %}
+          <div class="logo-marquee__item">
+            <img src="{{ logo.src | relative_url }}" alt="{{ logo.alt }}" loading="lazy">
           </div>
-          <div class="lab-body">
-            <div class="lab-line"><strong>Market Focus Signal</strong><em class="bar-a"></em></div>
-            <div class="lab-line"><strong>Proof Visibility</strong><em class="bar-b"></em></div>
-            <div class="lab-line"><strong>Trust Journey Score</strong><em class="bar-c"></em></div>
+        {% endfor %}
+        {% for logo in home.trust.logos %}
+          <div class="logo-marquee__item">
+            <img src="{{ logo.src | relative_url }}" alt="{{ logo.alt }}" loading="lazy">
+          </div>
+        {% endfor %}
+      </div>
+    </div>
 
-            <div class="orbit-wrap">
-              <div class="orbit orbit-one"></div>
-              <div class="orbit orbit-two"></div>
-              <div class="orbit-core">AIM<br>CREATE<br>PROMOTE</div>
+    <div class="stats-grid">
+      {% for stat in home.trust.stats %}
+        <article class="stat-card">
+          <p
+            class="stat-card__value"
+            data-count-up
+            data-prefix="{{ stat.prefix }}"
+            data-suffix="{{ stat.suffix }}"
+            data-target="{{ stat.value }}"
+          >
+            {{ stat.prefix }}0{{ stat.suffix }}
+          </p>
+          <p class="stat-card__label">{{ stat.label }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--cream" id="leistungen">
+  <div class="shell">
+    <div class="section-heading">
+      {% if home.services.label != blank %}
+        <p class="section-label section-label--dark">{{ home.services.label }}</p>
+      {% endif %}
+      <h2>{{ home.services.title }}</h2>
+      <p class="section-lead">{{ home.services.intro }}</p>
+      <p class="section-kicker">{{ home.services.track_label }}</p>
+    </div>
+
+    <div class="process-track">
+      {% for step in home.services.steps %}
+        <article class="process-card">
+          <p class="process-card__number">{{ step.number }}</p>
+          <h3>{{ step.title }}</h3>
+          {% if step.text %}
+            <p>{{ step.text }}</p>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--white" id="arbeiten">
+  <div class="shell">
+    <div class="section-heading">
+      {% if home.portfolio.label != blank %}
+        <p class="section-label section-label--dark">{{ home.portfolio.label }}</p>
+      {% endif %}
+      <h2>{{ home.portfolio.title }}</h2>
+      {% if home.portfolio.intro %}
+        <p class="section-lead">{{ home.portfolio.intro }}</p>
+      {% endif %}
+    </div>
+
+    <div class="portfolio-grid">
+      {% for project in home.portfolio.projects %}
+        <article class="project-card">
+          <button class="project-card__image-trigger" type="button" data-dialog-target="dialog-{{ project.slug }}" aria-label="{{ project.name }} Galerie öffnen">
+            <div class="project-card__image project-card__image--{{ project.slug }}">
+              <img
+                src="{{ project.cover | relative_url }}"
+                alt="{{ project.cover_alt }}"
+                loading="lazy"
+                {% if project.slug == 'lumiere' %}
+                  width="1024"
+                  height="538"
+                {% elsif project.slug == 'haser-garten' %}
+                  width="1024"
+                  height="551"
+                {% else %}
+                  width="3420"
+                  height="1972"
+                {% endif %}
+              >
             </div>
+          </button>
+          <div class="project-card__content">
+            <h3>{{ project.name }}</h3>
+            <p>{{ project.summary }}</p>
+            {% if project.result %}
+              <p class="project-card__result">{{ project.result }}</p>
+            {% endif %}
           </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--deep" id="stimmen">
+  <div class="shell">
+    <div class="section-heading section-heading--center">
+      {% if home.testimonials.label != blank %}
+        <p class="section-label section-label--light">{{ home.testimonials.label }}</p>
+      {% endif %}
+      <h2>{{ home.testimonials.title }}</h2>
+    </div>
+
+    <div class="testimonial-carousel" data-testimonial-carousel aria-roledescription="carousel">
+      <div class="testimonial-carousel__viewport">
+        {% for item in home.testimonials.items %}
+          <article class="testimonial-slide{% if forloop.first %} is-active{% endif %}" data-testimonial-slide{% unless forloop.first %} hidden{% endunless %}>
+            <p class="testimonial-slide__quote">“{{ item.quote }}”</p>
+            <div class="testimonial-slide__meta">
+              <span class="testimonial-slide__avatar" aria-hidden="true">
+                {% if item.image %}
+                  <img
+                    src="{{ item.image | relative_url }}"
+                    alt="{{ item.image_alt }}"
+                    width="{{ item.width }}"
+                    height="{{ item.height }}"
+                    loading="lazy"
+                  >
+                {% else %}
+                  {{ item.initials }}
+                {% endif %}
+              </span>
+              <div>
+                <strong>{{ item.name }}</strong>
+                <p>{{ item.role }}</p>
+              </div>
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+
+      <div class="testimonial-carousel__controls">
+        <button class="button button--ghost button--small" type="button" data-carousel-prev>Zurück</button>
+        <div class="testimonial-carousel__dots" role="tablist" aria-label="Testimonial-Auswahl">
+          {% for item in home.testimonials.items %}
+            <button
+              class="testimonial-carousel__dot{% if forloop.first %} is-active{% endif %}"
+              type="button"
+              role="tab"
+              aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+              data-carousel-dot="{{ forloop.index0 }}"
+            >
+              <span class="visually-hidden">Testimonial {{ forloop.index }}</span>
+            </button>
+          {% endfor %}
         </div>
-      </article>
-
-      <div class="lab-copy" data-aos="fade-left" data-aos-delay="220">
-        <article class="lab-point">
-          <h3>Clarity-first hierarchy</h3>
-          <p>Visual emphasis follows strategic priorities, not decoration.</p>
-        </article>
-        <article class="lab-point">
-          <h3>Trust by design</h3>
-          <p>Spacing, contrast, rhythm, and interaction reduce cognitive load and hesitation.</p>
-        </article>
-        <article class="lab-point">
-          <h3>Conversion-ready structure</h3>
-          <p>Even expressive sections stay grounded in clear next-step behavior.</p>
-        </article>
-
-        <a href="#next-step" class="btn btn--success">Use this level of craft for your canvas rollout</a>
+        <button class="button button--ghost button--small" type="button" data-carousel-next>Weiter</button>
       </div>
     </div>
   </div>
 </section>
 
-<hr class="section-sep">
+<section class="section section--cream" id="framework">
+  <div class="shell framework-card">
+    <div>
+      {% if home.framework.label != blank %}
+        <p class="section-label section-label--dark">{{ home.framework.label }}</p>
+      {% endif %}
+      <h2>{{ home.framework.title }}</h2>
+      <p class="section-lead">
+        {{ home.framework.intro_line_one }}<br>
+        {{ home.framework.intro_line_two }}
+      </p>
+    </div>
+    <a class="button button--secondary" href="{{ home.framework.cta.url }}" target="_blank" rel="noopener noreferrer">
+      {{ home.framework.cta.label }}
+    </a>
+  </div>
+</section>
 
-<section class="site-section" id="canvas-preview">
-  <div class="landing-shell">
-    <p class="eyebrow" data-aos="fade-up">Canvas Preview</p>
-    <h2 data-aos="fade-up" data-aos-delay="80">The full canvas guides nine connected decisions</h2>
-    <p class="lede" data-aos="fade-up" data-aos-delay="130">This is the core structure you will work through on the dedicated canvas page. Each element is designed to improve strategic clarity and execution quality.</p>
-
-    <div class="canvas-grid">
-      <article class="canvas-cell phase-aim" data-aos="fade-up" data-aos-delay="80">
-        <p class="canvas-phase">AIM</p>
-        <h3>Market Focus</h3>
-        <p>Define who you serve, at what level, and in which niche.</p>
-      </article>
-      <article class="canvas-cell phase-aim" data-aos="fade-up" data-aos-delay="120">
-        <p class="canvas-phase">AIM</p>
-        <h3>Outcome-Based Value Proposition</h3>
-        <p>Position around outcomes, not activity or fee discussion.</p>
-      </article>
-      <article class="canvas-cell phase-aim" data-aos="fade-up" data-aos-delay="160">
-        <p class="canvas-phase">AIM</p>
-        <h3>Proof of Performance</h3>
-        <p>Make quality and rigor visible through structured proof.</p>
-      </article>
-
-      <article class="canvas-cell phase-create" data-aos="fade-up" data-aos-delay="200">
-        <p class="canvas-phase">CREATE</p>
-        <h3>Primary Conversion Goal</h3>
-        <p>Design for the highest-value next action per audience.</p>
-      </article>
-      <article class="canvas-cell phase-create" data-aos="fade-up" data-aos-delay="240">
-        <p class="canvas-phase">CREATE</p>
-        <h3>Website User Journeys</h3>
-        <p>Create clear paths for firms and candidates separately.</p>
-      </article>
-      <article class="canvas-cell phase-create" data-aos="fade-up" data-aos-delay="280">
-        <p class="canvas-phase">CREATE</p>
-        <h3>Trust-Building Design</h3>
-        <p>Use structure and credibility signals to reduce hesitation.</p>
-      </article>
-
-      <article class="canvas-cell phase-promote" data-aos="fade-up" data-aos-delay="320">
-        <p class="canvas-phase">PROMOTE</p>
-        <h3>Everyday Presence</h3>
-        <p>Integrate positioning into daily outreach and conversations.</p>
-      </article>
-      <article class="canvas-cell phase-promote" data-aos="fade-up" data-aos-delay="360">
-        <p class="canvas-phase">PROMOTE</p>
-        <h3>Market Insights & Authority Content</h3>
-        <p>Publish useful perspective that supports strategic trust.</p>
-      </article>
-      <article class="canvas-cell phase-promote" data-aos="fade-up" data-aos-delay="400">
-        <p class="canvas-phase">PROMOTE</p>
-        <h3>Industry Ecosystem & Network</h3>
-        <p>Strengthen visible relationships that improve mandate quality.</p>
-      </article>
+<section class="section section--white" id="ueber-uns">
+  <div class="shell about-grid">
+    <div class="section-copy">
+      {% if home.about.label != blank %}
+        <p class="section-label section-label--dark">{{ home.about.label }}</p>
+      {% endif %}
+      <h2>{{ home.about.title }}</h2>
+      <p class="section-lead">{{ home.about.people[0].text }}</p>
+      <p class="section-lead">{{ home.about.people[1].text }}</p>
+      <p class="section-lead">{{ home.about.intro }}</p>
+      <a class="button button--secondary" href="{{ home.about.cta.url | relative_url }}">{{ home.about.cta.label }}</a>
     </div>
 
-    <div class="preview-callout" data-aos="fade-up" data-aos-delay="420">
-      <p>The dedicated canvas page includes practical prompts and implementation guidance.</p>
-      <a href="/canvas/" class="btn btn--primary">Open Full Canvas</a>
-      <a href="#review" class="btn btn--outline-ink">Start with a clarity review</a>
+    <div class="about-grid__cards">
+      {% for person in home.about.people %}
+        <article class="person-card">
+          <img
+            src="{{ person.image | relative_url }}"
+            alt="{{ person.image_alt }}"
+            width="{{ person.width }}"
+            height="{{ person.height }}"
+            loading="lazy"
+          >
+          <div class="person-card__content">
+            <p class="person-card__role">{{ person.role }}</p>
+            <h3>{{ person.name }}</h3>
+          </div>
+        </article>
+      {% endfor %}
     </div>
   </div>
 </section>
 
-<hr class="section-sep">
-
-<section class="site-section alternative-color" id="next-step">
-  <div class="landing-shell">
-    <span id="review" class="anchor-target" aria-hidden="true"></span>
-    <p class="eyebrow" data-aos="fade-up">Next Step</p>
-    <h2 data-aos="fade-up" data-aos-delay="80">Choose the path that fits your current stage</h2>
-
-    <div class="next-step-grid">
-      <article class="cta-tile" data-aos="fade-right" data-aos-delay="120">
-        <h3>Self-serve and start now</h3>
-        <p>Open the full canvas, work through all nine elements, and use it with your team for alignment.</p>
-        <a href="/canvas/" class="btn btn--primary">Go to Canvas Page</a>
-      </article>
-      <article class="cta-tile highlight" data-aos="fade-left" data-aos-delay="180">
-        <h3>Get structured feedback first</h3>
-        <p>Book a limited 20-minute Recruiting Website Clarity Review to identify the highest-leverage priorities.</p>
-        <a href="mailto:per@starke-team.de?subject=20-Minute%20Recruiting%20Website%20Clarity%20Review" class="btn btn--success">Request Review Call</a>
-      </article>
+<section class="section section--deep section--cta" id="cta">
+  <div class="shell cta-grid">
+    <div class="section-copy">
+      {% if home.final_cta.label != blank %}
+        <p class="section-label section-label--light">{{ home.final_cta.label }}</p>
+      {% endif %}
+      <h2>{{ home.final_cta.title }}</h2>
+      <p class="section-lead section-lead--light">{{ home.final_cta.text }}</p>
+      <a class="button button--light" href="{{ home.final_cta.primary_cta.url | relative_url }}">{{ home.final_cta.primary_cta.label }}</a>
     </div>
 
-    <p class="small-note" data-aos="fade-up" data-aos-delay="240">If helpful, include your current homepage URL in the email and we will share three concrete clarity upgrades to prioritize.</p>
+    <div class="audit-card audit-card--dark">
+      <h3>{{ home.pain.audit_title }}</h3>
+      <p>{{ home.pain.audit_text }}</p>
+      {% include site_check_form.html id_prefix="footer-check" form=home.pain.form context="footer-check" variant="dark" %}
+    </div>
   </div>
 </section>
+
+{% for project in home.portfolio.projects %}
+  <dialog class="project-dialog" id="dialog-{{ project.slug }}" data-project-dialog aria-labelledby="dialog-title-{{ project.slug }}">
+    <div class="project-dialog__header">
+      <div>
+        <h2 id="dialog-title-{{ project.slug }}">{{ project.name }}</h2>
+      </div>
+      <button class="project-dialog__close" type="button" data-dialog-close aria-label="Galerie schließen">
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <p class="project-dialog__summary">{{ project.summary }}</p>
+    {% if project.result %}
+      <p class="project-dialog__result">{{ project.result }}</p>
+    {% endif %}
+
+    <div class="project-dialog__gallery">
+      {% for image in project.gallery %}
+        <figure>
+          <img
+            src="{{ image.src | relative_url }}"
+            alt="{{ image.alt }}"
+            loading="lazy"
+            {% if project.slug == 'lumiere' %}
+              width="1024"
+              height="538"
+            {% elsif project.slug == 'haser-garten' %}
+              width="1024"
+              height="551"
+            {% else %}
+              width="3420"
+              height="1972"
+            {% endif %}
+          >
+          <figcaption>{{ image.caption }}</figcaption>
+        </figure>
+      {% endfor %}
+    </div>
+  </dialog>
+{% endfor %}

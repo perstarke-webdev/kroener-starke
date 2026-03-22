@@ -1,0 +1,252 @@
+meta:
+  title: "Kröner & Starke"
+  description: "Websites, die verkaufen. Webdesign, das niemand vergisst und Anfragen, die nicht mehr aufhören."
+  og_image: "/assets/images/brand/logo-ks.png"
+
+hero:
+  eyebrow: "Webdesign · Branding · Performance"
+  title: "Websites, die verkaufen."
+  subtitle: "Webdesign, das niemand vergisst und Anfragen, die nicht mehr aufhören."
+  support: "Starke Sales-Strategie trifft auf bewährte Umsetzung."
+  primary_cta:
+    label: "Projekt anfragen"
+    url: "/kontakt/"
+  secondary_cta:
+    label: "Portfolio ansehen"
+    url: "#arbeiten"
+  pills: []
+  board_title: "Starke Sales-Strategie trifft auf bewährte Umsetzung."
+  board_items:
+    - "Analyse und Optimierung deiner aktuellen Position"
+    - "Verkaufsstarkes, vertrauensbildendes Design"
+    - "Technisch starke Umsetzung"
+  board_note: ""
+
+pain:
+  title: "Wenn deine Website nicht verkauft, verlierst du jeden Tag potenzielle Kunden."
+  intro: ""
+  audit_title: "Unsicher, ob deine Website überhaupt verkauft?"
+  audit_text: "Hol dir einen kostenlosen Website-Check und wir zeigen dir, wo du aktuell Kunden verlierst."
+  bullet_points: []
+  form:
+    domain_label: "Deine Domain"
+    domain_placeholder: "beispiel.de"
+    phone_label: "Deine Telefonnummer"
+    phone_placeholder: "+49 000 0000000"
+    submit_label: "Website prüfen lassen"
+    success_message: "Danke, wir melden uns bei dir."
+    privacy_note: ""
+
+trust:
+  label: "Unternehmen, die uns vertrauen"
+  title: "Unternehmen, die uns vertrauen"
+  intro: ""
+  logos:
+    - src: "/assets/images/trust/1769753563_struve-ir-logo.png"
+      alt: ""
+    - src: "/assets/images/trust/1754290685_2_(1).webp"
+      alt: ""
+    - src: "/assets/images/trust/1754290685_3_(2).webp"
+      alt: ""
+    - src: "/assets/images/trust/1754290685_4_(1).webp"
+      alt: ""
+    - src: "/assets/images/trust/1754290685_5_(1).webp"
+      alt: ""
+    - src: "/assets/images/trust/1764539246_kerem-hillel-logo.png"
+      alt: ""
+    - src: "/assets/images/trust/1754290685_7_(1).webp"
+      alt: ""
+    - src: "/assets/images/trust/1754290685_8_(1).webp"
+      alt: ""
+    - src: "/assets/images/trust/1754290685_9.webp"
+      alt: ""
+    - src: "/assets/images/trust/1754290685_10.webp"
+      alt: ""
+    - src: "/assets/images/trust/1754290685_1_(1).webp"
+      alt: ""
+    - src: "/assets/images/trust/1765102032_aynur-logo.png"
+      alt: ""
+    - src: "/assets/images/trust/1756340716_friendship-gym-hamburg.png"
+      alt: ""
+    - src: "/assets/images/trust/1760246367_strengththerapist-logo.webp"
+      alt: ""
+    - src: "/assets/images/trust/1754290905_13_(1).webp"
+      alt: ""
+    - src: "/assets/images/trust/1754290905_12_(1).webp"
+      alt: ""
+    - src: "/assets/images/trust/1754290905_11_(1).webp"
+      alt: ""
+    - src: "/assets/images/trust/1754290905_20_(1).webp"
+      alt: ""
+    - src: "/assets/images/trust/1754290905_19_(1).webp"
+      alt: ""
+    - src: "/assets/images/trust/1754290905_18.webp"
+      alt: ""
+    - src: "/assets/images/trust/1764126545_sandra-seidler-logo.png"
+      alt: ""
+    - src: "/assets/images/trust/1765774509_levels-strength-and-nutrition-logo.png"
+      alt: ""
+    - src: "/assets/images/trust/1755725068_powerlifting-würzburg-junior-nationals-logo.webp"
+      alt: ""
+    - src: "/assets/images/trust/1754290905_15_(1).webp"
+      alt: ""
+    - src: "/assets/images/trust/1754290905_14.webp"
+      alt: ""
+  stats:
+    - prefix: "+"
+      value: 45
+      suffix: ""
+      label: "Webprojekte in unterschiedlichsten Branchen"
+    - prefix: ""
+      value: 5
+      suffix: "★"
+      label: "In all unseren Kundenbewertungen"
+    - prefix: ""
+      value: 100
+      suffix: "%"
+      label: "Fokus auf Ergebnisse, nicht nur Design"
+
+services:
+  label: ""
+  title: "Wir machen eine Sache: Websites, die verkaufen."
+  intro: "Alles, was wir tun, zahlt darauf ein. Wir kombinieren Strategie, Design und Umsetzung zu einem System, das dir konstant neue Anfragen bringt."
+  track_label: "So entsteht deine Verkaufsmaschine:"
+  steps:
+    - number: "01"
+      title: "Analyse und Optimierung deiner aktuellen Position"
+      text: ""
+    - number: "02"
+      title: "Verkaufsstarkes, vertrauensbildendes Design"
+      text: ""
+    - number: "03"
+      title: "Technisch starke Umsetzung"
+      text: ""
+    - number: "04"
+      title: "Suchmaschinenoptimierter Aufbau"
+      text: ""
+    - number: "05"
+      title: "Laufender Support"
+      text: ""
+
+portfolio:
+  label: ""
+  title: "Einblick in unsere Arbeit"
+  intro: ""
+  projects:
+    - slug: "onward-recruiting"
+      name: "Onward Recruiting"
+      summary: "Website, die Vertrauen aufbaut und Recruiting-Anfragen bringt."
+      result: "3× Wachstum bei Kunden, Partnern und Team nach Relaunch"
+      cover: "/assets/images/projects/onward-recruiting-1.webp"
+      cover_alt: "Startseite von Onward Recruiting"
+      gallery:
+        - src: "/assets/images/projects/onward-recruiting-1.webp"
+          alt: "Onward Recruiting Homepage"
+          caption: "Ein klarer Hero mit starker Positionierung und einer deutlich priorisierten Anfrageführung."
+        - src: "/assets/images/projects/onward-recruiting-2.webp"
+          alt: "Onward Recruiting Website Detail"
+          caption: "Vertrauen entsteht hier über ruhige Struktur, echte Proof-Elemente und konsequente Informationshierarchie."
+        - src: "/assets/images/projects/onward-recruiting-3.webp"
+          alt: "Onward Recruiting weitere Ansicht"
+          caption: "Jede Fläche unterstützt dieselbe Botschaft: professionell, fokussiert, glaubwürdig."
+    - slug: "lumiere"
+      name: "Lumière"
+      summary: "Klares Design, das die Marke stärkt und im Kopf bleibt."
+      result: ""
+      cover: "/assets/images/projects/lumiere.webp"
+      cover_alt: "Lumière Projektansicht"
+      gallery:
+        - src: "/assets/images/projects/lumiere.webp"
+          alt: "Lumière Website"
+          caption: "Eine reduzierte visuelle Sprache, die der Marke Präsenz gibt, ohne sie zu überladen."
+    - slug: "cafe-rotkehlchen"
+      name: "Café Rotkehlchen"
+      summary: "Website, die Atmosphäre transportiert und Gäste anzieht."
+      result: "Über 100 Bestellungen in den ersten 2 Wochen nach Launch"
+      cover: "/assets/images/projects/cafe-rotkehlchen-1.webp"
+      cover_alt: "Café Rotkehlchen Website"
+      gallery:
+        - src: "/assets/images/projects/cafe-rotkehlchen-1.webp"
+          alt: "Café Rotkehlchen Startseite"
+          caption: "Die Website verbindet Markencharakter mit klarer Führung in Richtung Shop und Bestellung."
+        - src: "/assets/images/projects/cafe-rotkehlchen-2.webp"
+          alt: "Café Rotkehlchen Menü oder Shop Bereich"
+          caption: "Produktinszenierung, Navigation und Story greifen ineinander, damit aus Aufmerksamkeit echte Aktion wird."
+        - src: "/assets/images/projects/cafe-rotkehlchen-3.webp"
+          alt: "Café Rotkehlchen Detailansicht"
+          caption: "Wärme, Wiedererkennung und Conversion-Logik stehen hier nicht im Widerspruch, sondern verstärken sich."
+    - slug: "haser-garten"
+      name: "Haser Garten"
+      summary: "Website, die Vertrauen schafft und die Qualität der Gartenarbeit klar kommuniziert."
+      result: ""
+      cover: "/assets/images/projects/haser-garten.webp"
+      cover_alt: "Haser Garten Website"
+      gallery:
+        - src: "/assets/images/projects/haser-garten.webp"
+          alt: "Haser Garten Website"
+          caption: "Ein klarer Auftritt, der Qualität, Vertrauen und die Handschrift des Betriebs sofort sichtbar macht."
+
+testimonials:
+  label: ""
+  title: "Was Kund:innen sagen"
+  items:
+    - quote: "Die Zusammenarbeit mit Per war von Anfang an reibungslos. Er hat uns mit Klarheit begleitet, neue Impulse eingebracht und alles absolut zuverlässig umgesetzt. Eine seltene Kombination aus Herz, Expertise und Professionalität."
+      name: "Jasper Schippmann"
+      role: "Mitgründer von Onward Recruiting"
+      image: "/assets/images/testimonials/jasper-schippmann.webp"
+      image_alt: ""
+      width: 417
+      height: 608
+      initials: "JS"
+    - quote: "Danke, Per, für meine neue Homepage! Ich bin rundum glücklich. Visuell wie technisch einfach top. Vom ersten Gespräch an war alles professionell, durchdacht und blitzschnell umgesetzt. Ich bin dir sehr dankbar und empfehle dich von Herzen weiter."
+      name: "Astrid Groh"
+      role: "Gründerin InBewegung"
+      image: "/assets/images/testimonials/astrid-groh.webp"
+      image_alt: ""
+      width: 416
+      height: 415
+      initials: "AG"
+    - quote: "Ich habe von Anfang an gemerkt, dass Per Starke Web Development mein Ziel und meine Vision wirklich verstanden hat. Während des gesamten Prozesses waren die Zusammenarbeit und die Unterstützung durchweg hervorragend. Und der kreative Prozess hat meine Erwartungen übertroffen, als es darum ging, meine Website zum Leben zu erwecken. Ich kann Per Starke Web Development wärmstens empfehlen!"
+      name: "Joan Gilmour"
+      role: "Gründerin PUPPPS"
+      initials: "JG"
+
+framework:
+  label: ""
+  title: "Struktur statt Zufall."
+  intro_line_one: "Unsere Arbeit basiert auf einem klaren Drei-Phasen-Ansatz:"
+  intro_line_two: "Klarheit. Umsetzung. Wachstum."
+  cta:
+    label: "Denkweise ansehen"
+    url: "https://perstarke-webdev.de/aim-create-promote-framework"
+
+about:
+  label: ""
+  title: "Zwei Stärken. Ein klares Ziel."
+  intro: "Gemeinsam entstehen Websites, die nicht nur gut aussehen, sondern Ergebnisse bringen."
+  people:
+    - name: "Simon Kröner"
+      role: "Sales-Strategie & Positionierung"
+      image: "/assets/images/people/simon-kroener.webp"
+      image_alt: "Simon Kröner"
+      width: 2277
+      height: 3325
+      text: "Simon bringt Vertrieb, Positionierung und den Blick dafür, was Kunden wirklich überzeugt."
+    - name: "Per Starke"
+      role: "Design & technische Umsetzung"
+      image: "/assets/images/people/per-starke.webp"
+      image_alt: "Per Starke"
+      width: 4024
+      height: 5487
+      text: "Per sorgt für klare Struktur, ruhiges Design und eine technisch starke Umsetzung."
+  cta:
+    label: "Mehr über uns erfahren"
+    url: "/ueber-uns/"
+
+final_cta:
+  label: ""
+  title: "Bereit für eine Website, die wirklich verkauft?"
+  text: "Wir bauen dir eine Website, die Vertrauen schafft und dir konstant neue Anfragen bringt."
+  primary_cta:
+    label: "Projekt anfragen"
+    url: "/kontakt/"

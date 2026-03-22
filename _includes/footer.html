@@ -1,27 +1,61 @@
-<div class="page__footer-follow">
-
-  <ul class="socials">
-
-    <li></li>
-
-    {% for link in site.footer.links %}
-    {% if link.url %}
-    <li class="socials__item">
-      <a href="{{link.url}}" rel="noopener noreferrer nofollow" target="_blank" class="socials__item__link" title="{{link.label}}">
-        <i class="{{link.icon}} footer-icon" aria-hidden="true"></i>
-      </a>
-    </li>
-    {% endif %}
-    {% endfor %}
-
-    <li class="socials__item">
-      <a href="/imprint" rel="noopener noreferrer nofollow" target="_blank" class="socials__item__link" title="Imprint">
-        <i class="fas fa-gavel footer-icon" aria-hidden="true"></i>
-      </a>
-    </li>
-
-  </ul>
-
+<div class="site-footer">
+  <div class="shell site-footer__topbar">
+    <p class="site-footer__prompt">Bereit für eine Website, die verkauft?</p>
+    <a class="button button--ghost button--small" href="{{ '/kontakt/' | relative_url }}">Projekt anfragen</a>
   </div>
 
-  <div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.footer.copyright | default: site.title }}. {% if site.footer.creator %} Created by <a rel="noopener noreferrer nofollow" target="_blank"href="{{site.footer.creator.url}}">{{site.footer.creator.name}}</a>{% endif %}</div>
+  <div class="shell site-footer__main">
+    <div class="site-footer__column">
+      <img class="site-footer__brand" src="{{ '/assets/images/brand/logo-ks-white.png' | relative_url }}" alt="{{ site.title }}" width="1536" height="275">
+      <p>{{ site.branding.claim }}</p>
+      <p>Eine Zusammenarbeit von <a class="site-footer__link" href="{{ site.branding.collaboration.simon_url }}" target="_blank" rel="noopener noreferrer">{{ site.branding.collaboration.simon_name }}</a> und <a class="site-footer__link" href="{{ site.branding.collaboration.per_url }}" target="_blank" rel="noopener noreferrer">{{ site.branding.collaboration.per_name }}</a>.</p>
+    </div>
+
+    <div class="site-footer__column">
+      <h3>Navigation</h3>
+      <ul class="site-footer__list">
+        {% for link in site.data.navigation.footer %}
+          <li>
+            <a
+              class="site-footer__link{% if link.url == '/' %}{% if page.url == '/' or page.url == '/index.html' %} is-current{% endif %}{% elsif page.url contains link.url %} is-current{% endif %}"
+              href="{{ link.url | relative_url }}"
+              {% if link.url == '/' %}{% if page.url == '/' or page.url == '/index.html' %}aria-current="page"{% endif %}{% elsif page.url contains link.url %}aria-current="page"{% endif %}
+            >
+              {{ link.title }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="site-footer__column">
+      <h3>Kontakt</h3>
+      <ul class="site-footer__list">
+        <li>{{ site.title }}</li>
+        <li><a class="site-footer__link" href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></li>
+        <li><a class="site-footer__link" href="tel:{{ site.contact.phone | replace: ' ', '' }}">{{ site.contact.phone }}</a></li>
+      </ul>
+    </div>
+
+    <div class="site-footer__column site-footer__column--legal">
+      <h3>Rechtliches</h3>
+      <ul class="site-footer__list site-footer__list--compact">
+        {% for link in site.data.navigation.legal %}
+          <li>
+            <a
+              class="site-footer__link{% if link.url == '/' %}{% if page.url == '/' or page.url == '/index.html' %} is-current{% endif %}{% elsif page.url contains link.url %} is-current{% endif %}"
+              href="{{ link.url | relative_url }}"
+              {% if link.url == '/' %}{% if page.url == '/' or page.url == '/index.html' %}aria-current="page"{% endif %}{% elsif page.url contains link.url %}aria-current="page"{% endif %}
+            >
+              {{ link.title }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <div class="shell site-footer__bottom">
+    <p>© PSWD, 2026.</p>
+  </div>
+</div>

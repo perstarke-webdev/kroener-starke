@@ -27,3 +27,5 @@ legal:
     url: "/impressum/"
   - title: "Datenschutz"
     url: "/datenschutz/"
+  - title: "AGB"
+    url: "/agb/"

@@ -37,8 +37,8 @@ classes:
         <h3>{{ contact.direct.title }}</h3>
         <p>{{ contact.direct.intro }}</p>
         <div class="contact-page__direct-links">
-          <a class="site-footer__link" href="mailto:info@perstarke-webdev.de">info@perstarke-webdev.de</a>
-          <a class="site-footer__link" href="tel:+41791389245">+41 79 138 92 45</a>
+          <a class="site-footer__link" href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>
+          <a class="site-footer__link" href="tel:{{ site.contact.phone | replace: ' ', '' }}">{{ site.contact.phone }}</a>
         </div>
       </div>
     </div>

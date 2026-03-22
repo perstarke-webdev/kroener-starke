@@ -1,6 +1,9 @@
 @font-face {
   font-family: "Inter";
-  src: url("/assets/fonts/inter/inter-400.ttf") format("truetype");
+  src:
+    local("Inter"),
+    local("Inter Regular"),
+    url("/assets/fonts/inter/inter-400.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -8,7 +11,10 @@
 
 @font-face {
   font-family: "Inter";
-  src: url("/assets/fonts/inter/inter-600.ttf") format("truetype");
+  src:
+    local("Inter SemiBold"),
+    local("Inter"),
+    url("/assets/fonts/inter/inter-600.ttf") format("truetype");
   font-style: normal;
   font-weight: 600;
   font-display: swap;
@@ -1414,6 +1420,12 @@ p {
   font-size: clamp(1.28rem, 2vw, 1.7rem);
 }
 
+.legal-section h3 {
+  margin: 0;
+  font-size: 1.04rem;
+  color: var(--color-ink);
+}
+
 .legal-section p,
 .legal-section li {
   color: var(--color-ink-secondary);
@@ -1431,6 +1443,45 @@ p {
   gap: 0.55rem;
   padding-left: 1.15rem;
   margin: 0;
+}
+
+.legal-entity-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.legal-entity-card {
+  display: grid;
+  gap: 0.52rem;
+  padding: 1rem 1.05rem;
+  border: 1px solid rgba(124, 58, 237, 0.12);
+  border-radius: 18px;
+  background: rgba(248, 246, 252, 0.92);
+}
+
+.legal-inline-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem 1.2rem;
+}
+
+.legal-inline-links a {
+  width: auto;
+}
+
+.legal-meta-list {
+  display: grid;
+  gap: 0.7rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.legal-meta-list li {
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(124, 58, 237, 0.12);
+  border-radius: 18px;
+  background: rgba(248, 246, 252, 0.92);
 }
 
 .services-page__hero .hero-section__inner {

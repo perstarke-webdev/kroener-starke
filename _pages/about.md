@@ -21,7 +21,16 @@ classes:
 
     <aside class="hero-board about-page__hero-media" aria-label="Simon Kröner und Per Starke">
       <div class="hero-board__media">
-        <img src="{{ '/assets/images/people/duo-portrait.webp' | relative_url }}" alt="Simon Kröner und Per Starke" width="2250" height="1500" loading="eager">
+        <img
+          src="{{ '/assets/images/people/duo-portrait-640.webp' | relative_url }}"
+          srcset="{{ '/assets/images/people/duo-portrait-640.webp' | relative_url }} 640w, {{ '/assets/images/people/duo-portrait-960.webp' | relative_url }} 960w, {{ '/assets/images/people/duo-portrait.webp' | relative_url }} 1500w"
+          sizes="(max-width: 699px) calc(100vw - 40px), (max-width: 1100px) min(100vw - 40px, 720px), 420px"
+          alt="Simon Kröner und Per Starke"
+          width="1500"
+          height="1000"
+          loading="eager"
+          decoding="async"
+        >
       </div>
     </aside>
   </div>

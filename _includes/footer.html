@@ -6,7 +6,7 @@
 
   <div class="shell site-footer__main">
     <div class="site-footer__column">
-      <img class="site-footer__brand" src="{{ '/assets/images/brand/logo-ks-white.png' | relative_url }}" alt="{{ site.title }}" width="1536" height="275">
+      <img class="site-footer__brand" src="{{ '/assets/images/brand/logo-ks-white-480.webp' | relative_url }}" alt="{{ site.title }}" width="480" height="86" loading="lazy">
       <p>{{ site.branding.claim }}</p>
       <p>Eine Zusammenarbeit von <a class="site-footer__link" href="{{ site.branding.collaboration.simon_url }}" target="_blank" rel="noopener noreferrer">{{ site.branding.collaboration.simon_name }}</a> und <a class="site-footer__link" href="{{ site.branding.collaboration.per_url }}" target="_blank" rel="noopener noreferrer">{{ site.branding.collaboration.per_name }}</a>.</p>
     </div>
@@ -32,8 +32,8 @@
       <h3>Kontakt</h3>
       <ul class="site-footer__list">
         <li>{{ site.title }}</li>
-        <li><a class="site-footer__link" href="mailto:info@perstarke-webdev.de">info@perstarke-webdev.de</a></li>
-        <li><a class="site-footer__link" href="tel:+41791389245">+41 79 138 92 45</a></li>
+        <li><a class="site-footer__link" href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></li>
+        <li><a class="site-footer__link" href="tel:{{ site.contact.phone | replace: ' ', '' }}">{{ site.contact.phone }}</a></li>
       </ul>
     </div>
 

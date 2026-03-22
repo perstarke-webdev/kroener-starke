@@ -30,9 +30,9 @@ pain:
   bullet_points: []
   form:
     domain_label: "Deine Domain"
-    domain_placeholder: "beispiel.de"
+    domain_placeholder: "beispiel.ch"
     phone_label: "Deine Telefonnummer"
-    phone_placeholder: "+49 000 0000000"
+    phone_placeholder: "+41 00 000 00 00"
     submit_label: "Website prüfen lassen"
     success_message: "Danke, wir melden uns bei dir."
     privacy_note: ""

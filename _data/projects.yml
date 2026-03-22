@@ -1,0 +1,174 @@
+- slug: "onward-recruiting"
+  featured: true
+  name: "Onward Recruiting"
+  summary: "Website, die Vertrauen aufbaut und Recruiting-Anfragen bringt."
+  result: "3× Wachstum bei Kunden, Partnern und Team nach Relaunch"
+  cover: "/assets/images/projects/onward-recruiting-1.webp"
+  cover_alt: "Startseite von Onward Recruiting"
+  width: 3420
+  height: 1972
+  gallery:
+    - src: "/assets/images/projects/onward-recruiting-1.webp"
+      alt: "Onward Recruiting Homepage"
+      caption: "Ein klarer Hero mit starker Positionierung und einer deutlich priorisierten Anfrageführung."
+      width: 3420
+      height: 1972
+    - src: "/assets/images/projects/onward-recruiting-2.webp"
+      alt: "Onward Recruiting Website Detail"
+      caption: "Vertrauen entsteht hier über ruhige Struktur, echte Proof-Elemente und konsequente Informationshierarchie."
+      width: 3420
+      height: 1972
+    - src: "/assets/images/projects/onward-recruiting-3.webp"
+      alt: "Onward Recruiting weitere Ansicht"
+      caption: "Jede Fläche unterstützt dieselbe Botschaft: professionell, fokussiert, glaubwürdig."
+      width: 3420
+      height: 1972
+
+- slug: "lumiere"
+  featured: true
+  name: "Lumière"
+  summary: "Klares Design, das die Marke stärkt und im Kopf bleibt."
+  result: ""
+  cover: "/assets/images/projects/lumiere.webp"
+  cover_alt: "Lumière Projektansicht"
+  width: 1024
+  height: 538
+  gallery:
+    - src: "/assets/images/projects/lumiere.webp"
+      alt: "Lumière Website"
+      caption: "Eine reduzierte visuelle Sprache, die der Marke Präsenz gibt, ohne sie zu überladen."
+      width: 1024
+      height: 538
+
+- slug: "cafe-rotkehlchen"
+  featured: true
+  name: "Café Rotkehlchen"
+  summary: "Website, die Atmosphäre transportiert und Gäste anzieht."
+  result: "Über 100 Bestellungen in den ersten 2 Wochen nach Launch"
+  cover: "/assets/images/projects/cafe-rotkehlchen-1.webp"
+  cover_alt: "Café Rotkehlchen Website"
+  width: 3420
+  height: 1976
+  gallery:
+    - src: "/assets/images/projects/cafe-rotkehlchen-1.webp"
+      alt: "Café Rotkehlchen Startseite"
+      caption: "Die Website verbindet Markencharakter mit klarer Führung in Richtung Shop und Bestellung."
+      width: 3420
+      height: 1976
+    - src: "/assets/images/projects/cafe-rotkehlchen-2.webp"
+      alt: "Café Rotkehlchen Menü oder Shop Bereich"
+      caption: "Produktinszenierung, Navigation und Story greifen ineinander, damit aus Aufmerksamkeit echte Aktion wird."
+      width: 3420
+      height: 1976
+    - src: "/assets/images/projects/cafe-rotkehlchen-3.webp"
+      alt: "Café Rotkehlchen Detailansicht"
+      caption: "Wärme, Wiedererkennung und Conversion-Logik stehen hier nicht im Widerspruch, sondern verstärken sich."
+      width: 3420
+      height: 1976
+
+- slug: "haser-garten"
+  featured: true
+  name: "Haser Garten"
+  summary: "Website, die Vertrauen schafft und die Qualität der Gartenarbeit klar kommuniziert."
+  result: ""
+  cover: "/assets/images/projects/haser-garten.webp"
+  cover_alt: "Haser Garten Website"
+  width: 1024
+  height: 551
+  gallery:
+    - src: "/assets/images/projects/haser-garten.webp"
+      alt: "Haser Garten Website"
+      caption: "Ein klarer Auftritt, der Qualität, Vertrauen und die Handschrift des Betriebs sofort sichtbar macht."
+      width: 1024
+      height: 551
+
+- slug: "struve-international-recruiting"
+  featured: false
+  name: "Struve International Recruiting"
+  summary: "Recruiting-Auftritt, der komplexe Vermittlung klar erklärt und sofort Vertrauen schafft."
+  result: ""
+  cover: "/assets/images/projects/struve-international-recruiting-1.webp"
+  cover_alt: "Startseite von Struve International Recruiting"
+  width: 3398
+  height: 1974
+  gallery:
+    - src: "/assets/images/projects/struve-international-recruiting-1.webp"
+      alt: "Struve International Recruiting Hero"
+      caption: "Ein starker Einstieg, der Seriosität, Menschlichkeit und klare Anfrageführung verbindet."
+      width: 3398
+      height: 1974
+    - src: "/assets/images/projects/struve-international-recruiting-2.webp"
+      alt: "Struve International Recruiting Leistungen"
+      caption: "Komplexe Recruiting-Leistung wird in eine ruhige, verständliche Struktur übersetzt."
+      width: 3398
+      height: 1974
+    - src: "/assets/images/projects/struve-international-recruiting-3.webp"
+      alt: "Struve International Recruiting FAQ"
+      caption: "Team, Erklärung und häufige Fragen bauen ab dem ersten Besuch gezielt Vertrauen auf."
+      width: 3398
+      height: 1974
+
+- slug: "aynur-by-mati"
+  featured: false
+  name: "Aynur by Mati"
+  summary: "Sensibler Auftritt, der Haltung, Transparenz und Unterstützung in eine klare Nutzerführung übersetzt."
+  result: ""
+  cover: "/assets/images/projects/aynur-by-mati-1.webp"
+  cover_alt: "Startseite von Aynur by Mati"
+  width: 3420
+  height: 1976
+  gallery:
+    - src: "/assets/images/projects/aynur-by-mati-1.webp"
+      alt: "Aynur by Mati Hero"
+      caption: "Eine einfühlsame visuelle Sprache, die Haltung, Zweck und Handlungsoptionen sofort verständlich macht."
+      width: 3420
+      height: 1976
+    - src: "/assets/images/projects/aynur-by-mati-2.webp"
+      alt: "Aynur by Mati Wirkung und Transparenz"
+      caption: "Wirkung und Transparenz werden nicht behauptet, sondern ruhig, nachvollziehbar und glaubwürdig gezeigt."
+      width: 3408
+      height: 1900
+    - src: "/assets/images/projects/aynur-by-mati-3.webp"
+      alt: "Aynur by Mati Detailansicht"
+      caption: "Editoriale Bildführung und klare Inhalte transportieren Würde, Nähe und Orientierung zugleich."
+      width: 3408
+      height: 1900
+
+- slug: "dominating-barbells"
+  featured: false
+  name: "Dominating Barbells"
+  summary: "Markanter Markenauftritt, der Community, Coaching und Shop in einem klaren System zusammenführt."
+  result: "Kundenstamm verdoppelt im Quartal nach Website-Launch"
+  cover: "/assets/images/projects/dominating-barbells-1.webp"
+  cover_alt: "Startseite von Dominating Barbells"
+  width: 3398
+  height: 1974
+  gallery:
+    - src: "/assets/images/projects/dominating-barbells-1.webp"
+      alt: "Dominating Barbells Hero"
+      caption: "Ein markanter Auftritt, der Zielgruppe, Haltung und Energie sofort auf den Punkt bringt."
+      width: 3398
+      height: 1974
+    - src: "/assets/images/projects/dominating-barbells-2.webp"
+      alt: "Dominating Barbells Shop"
+      caption: "Der Shop ist direkt in die Markenwelt eingebettet und macht aus Aufmerksamkeit zusätzliche Umsatzchancen."
+      width: 3398
+      height: 1974
+    - src: "/assets/images/projects/dominating-barbells-3.webp"
+      alt: "Dominating Barbells Athleten Team"
+      caption: "Team, Wettkämpfe und Community werden sichtbar, damit aus einer Website ein echter Anziehungspunkt für Mitglieder wird."
+      width: 3398
+      height: 1974
+
+- slug: "simon-loerach"
+  featured: false
+  name: "Simon Lörach"
+  summary: "Persönlicher Auftritt mit klarer Positionierung, starkem Expertenbild und direkter Conversion-Führung."
+  result: ""
+  cover: "/assets/images/projects/simon-loerach.avif"
+  cover_alt: "Startseite von Simon Lörach"
+  gallery:
+    - src: "/assets/images/projects/simon-loerach.avif"
+      alt: "Simon Lörach Website"
+      caption: "Eine klare Personal-Branding-Seite, die Expertise, Angebot und Analyse-Call sofort in eine starke Conversion-Strecke übersetzt."
+

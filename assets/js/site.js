@@ -49,6 +49,11 @@
       { selector: ".bio-section__media", step: 0 },
       { selector: ".about-page__why .section-heading > *", step: 45 },
       { selector: ".about-page__why-card", step: 70 },
+      { selector: ".portfolio-page .project-card", step: 70 },
+      { selector: ".contact-page__form-card", step: 0 },
+      { selector: ".contact-page__aside > *", step: 65 },
+      { selector: ".legal-page__aside > *", step: 65 },
+      { selector: ".legal-page__content > *", step: 55 },
       { selector: ".placeholder-page__inner > *", step: 60 },
       { selector: ".services-page__problem .section-heading > *", step: 50 },
       { selector: ".services-page__problem-card", step: 65 },
@@ -322,9 +327,44 @@
     return input;
   }
 
-  function submitDemoLead(payload) {
+  function parseEmail(value) {
+    var input = (value || "").trim();
+
+    if (!input || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input)) {
+      return null;
+    }
+
+    return input;
+  }
+
+  function parseOptionalWebsite(value) {
+    var input = (value || "").trim();
+    var normalized = input;
+
+    if (!input) {
+      return "";
+    }
+
+    if (!/^https?:\/\//i.test(normalized)) {
+      normalized = "https://" + normalized;
+    }
+
+    try {
+      var parsed = new URL(normalized);
+      var host = parsed.hostname.replace(/^www\./, "");
+
+      if (!host || host.indexOf(".") === -1 || /\s/.test(host)) {
+        return null;
+      }
+
+      return input;
+    } catch (error) {
+      return null;
+    }
+  }
+
+  function submitDemoSubmission(payload, storageKey) {
     return new Promise(function (resolve) {
-      var storageKey = "ks-site-check-submissions";
       var entries = [];
 
       try {
@@ -347,7 +387,11 @@
     });
   }
 
-  function submitFormsparkLead(endpoint, payload) {
+  function submitDemoLead(payload) {
+    return submitDemoSubmission(payload, "ks-site-check-submissions");
+  }
+
+  function submitFormsparkPayload(endpoint, payload) {
     var formData = new window.URLSearchParams();
 
     Object.keys(payload).forEach(function (key) {
@@ -368,12 +412,16 @@
           throw new Error("Formspark request failed");
         }
 
-        return response.json().then(function (data) {
-          if (!data || !data.domain || !data.phone) {
-            throw new Error("Formspark request failed");
+        return response.text().then(function (text) {
+          if (!text) {
+            return {};
           }
 
-          return data;
+          try {
+            return JSON.parse(text);
+          } catch (error) {
+            return {};
+          }
         });
       });
   }
@@ -436,8 +484,111 @@
         };
         var submitRequest =
           formMode === "formspark" && formEndpoint
-            ? submitFormsparkLead(formEndpoint, payload)
+            ? submitFormsparkPayload(formEndpoint, payload)
             : submitDemoLead(payload);
+
+        submitRequest
+          .then(function () {
+            form.reset();
+            status.textContent = "";
+            success.hidden = false;
+          })
+          .catch(function () {
+            status.textContent =
+              "Gerade gab es ein Problem. Bitte versuche es noch einmal.";
+          })
+          .finally(function () {
+            submitButton.disabled = false;
+          });
+      });
+    });
+  }
+
+  function initProjectForms() {
+    var forms = document.querySelectorAll("[data-project-form]");
+
+    if (!forms.length) {
+      return;
+    }
+
+    forms.forEach(function (form) {
+      var formMode = form.getAttribute("data-form-mode") || "demo";
+      var formEndpoint = form.getAttribute("data-form-endpoint") || "";
+      var status = form.querySelector("[data-form-status]");
+      var success = form.querySelector("[data-form-success]");
+      var submitButton = form.querySelector("button[type='submit']");
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        var nameInput = form.querySelector("input[name='name']");
+        var emailInput = form.querySelector("input[name='email']");
+        var websiteInput = form.querySelector("input[name='website']");
+        var messageInput = form.querySelector("textarea[name='message']");
+        var nameError = form.querySelector("[data-error-for='name']");
+        var emailError = form.querySelector("[data-error-for='email']");
+        var websiteError = form.querySelector("[data-error-for='website']");
+        var messageError = form.querySelector("[data-error-for='message']");
+        var parsedName = (nameInput.value || "").trim();
+        var parsedEmail = parseEmail(emailInput.value);
+        var parsedWebsite = parseOptionalWebsite(websiteInput.value);
+        var parsedMessage = (messageInput.value || "").trim();
+        var hasError = false;
+
+        success.hidden = true;
+        status.textContent = "";
+        nameError.textContent = "";
+        emailError.textContent = "";
+        websiteError.textContent = "";
+        messageError.textContent = "";
+        nameInput.classList.remove("is-invalid");
+        emailInput.classList.remove("is-invalid");
+        websiteInput.classList.remove("is-invalid");
+        messageInput.classList.remove("is-invalid");
+
+        if (!parsedName) {
+          nameError.textContent = "Bitte gib deinen Namen ein.";
+          nameInput.classList.add("is-invalid");
+          hasError = true;
+        }
+
+        if (!parsedEmail) {
+          emailError.textContent = "Bitte gib eine gültige E-Mail-Adresse ein.";
+          emailInput.classList.add("is-invalid");
+          hasError = true;
+        }
+
+        if (parsedWebsite === null) {
+          websiteError.textContent = "Bitte gib eine gültige Website ein.";
+          websiteInput.classList.add("is-invalid");
+          hasError = true;
+        }
+
+        if (!parsedMessage) {
+          messageError.textContent = "Bitte beschreibe dein Projekt kurz.";
+          messageInput.classList.add("is-invalid");
+          hasError = true;
+        }
+
+        if (hasError) {
+          return;
+        }
+
+        submitButton.disabled = true;
+        status.textContent = "Wird verarbeitet...";
+
+        var payload = {
+          name: parsedName,
+          email: parsedEmail,
+          website: parsedWebsite,
+          message: parsedMessage,
+          source: form.getAttribute("data-form-context") || "contact-page",
+          submittedAt: new Date().toISOString()
+        };
+        var submitRequest =
+          formMode === "formspark" && formEndpoint
+            ? submitFormsparkPayload(formEndpoint, payload)
+            : submitDemoSubmission(payload, "ks-project-submissions");
 
         submitRequest
           .then(function () {
@@ -611,6 +762,7 @@
     initNav();
     initCountUp();
     initForms();
+    initProjectForms();
     initDialogs();
     initCarousel();
   });

@@ -33,7 +33,7 @@ classes:
         </article>
         <article class="services-page__hero-step">
           <span>03</span>
-          <p>Technisch saubere Umsetzung</p>
+          <p>Technisch starke Umsetzung</p>
         </article>
         <article class="services-page__hero-step">
           <span>04</span>
@@ -114,7 +114,7 @@ classes:
 
       <article class="process-card">
         <p class="process-card__number">03</p>
-        <h3>Technisch saubere Umsetzung</h3>
+        <h3>Technisch starke Umsetzung</h3>
         <p>Eine Website muss nicht nur gut aussehen, sondern zuverlässig funktionieren.</p>
         <p>Wir setzen dein Projekt performant, stabil und skalierbar um –<br>ohne unnötige Komplexität.</p>
       </article>

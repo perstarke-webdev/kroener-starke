@@ -1,0 +1,26 @@
+hero:
+  label: "Jetzt durchstarten"
+  title: "Projekt anfragen"
+  subtitle: "Erzähl uns kurz, worum es geht."
+  support: "Wir melden uns persönlich bei dir und schauen gemeinsam, ob und wie wir dich am besten unterstützen können."
+
+form:
+  name_label: "Dein Name*"
+  name_placeholder: "Max Mustermann"
+  email_label: "Deine E-Mail*"
+  email_placeholder: "max@beispiel.de"
+  website_label: "Deine Website (optional)"
+  website_placeholder: "www.beispiel.de"
+  message_label: "Worum geht es bei deinem Projekt?*"
+  message_placeholder: "Kurze Beschreibung deines Projekts, deiner Ziele oder deiner aktuellen Situation"
+  submit_label: "Projekt anfragen"
+  success_message: "Danke, wir melden uns persönlich bei dir."
+
+analysis:
+  label: "Oder starte mit einer Analyse"
+  title: "Unsicher, ob deine Website überhaupt verkauft?"
+  text: "Hol dir einen kostenlosen Website-Check und wir zeigen dir, wo du aktuell Kunden verlierst."
+
+direct:
+  title: "Direkter Kontakt"
+  intro: "Wenn du lieber direkt sprechen möchtest:"

@@ -9,6 +9,7 @@ classes:
   - home-page
 ---
 {% assign home = site.data.homepage %}
+{% assign featured_projects = site.data.projects | where: "featured", true %}
 
 <section class="hero-section">
   <div class="shell hero-section__inner">
@@ -148,38 +149,7 @@ classes:
       {% endif %}
     </div>
 
-    <div class="portfolio-grid">
-      {% for project in home.portfolio.projects %}
-        <article class="project-card">
-          <button class="project-card__image-trigger" type="button" data-dialog-target="dialog-{{ project.slug }}" aria-label="{{ project.name }} Galerie öffnen">
-            <div class="project-card__image project-card__image--{{ project.slug }}">
-              <img
-                src="{{ project.cover | relative_url }}"
-                alt="{{ project.cover_alt }}"
-                loading="lazy"
-                {% if project.slug == 'lumiere' %}
-                  width="1024"
-                  height="538"
-                {% elsif project.slug == 'haser-garten' %}
-                  width="1024"
-                  height="551"
-                {% else %}
-                  width="3420"
-                  height="1972"
-                {% endif %}
-              >
-            </div>
-          </button>
-          <div class="project-card__content">
-            <h3>{{ project.name }}</h3>
-            <p>{{ project.summary }}</p>
-            {% if project.result %}
-              <p class="project-card__result">{{ project.result }}</p>
-            {% endif %}
-          </div>
-        </article>
-      {% endfor %}
-    </div>
+    {% include project_showcase.html projects=featured_projects dialog_prefix="home-project" %}
   </div>
 </section>
 
@@ -310,44 +280,3 @@ classes:
     </div>
   </div>
 </section>
-
-{% for project in home.portfolio.projects %}
-  <dialog class="project-dialog" id="dialog-{{ project.slug }}" data-project-dialog aria-labelledby="dialog-title-{{ project.slug }}">
-    <div class="project-dialog__header">
-      <div>
-        <h2 id="dialog-title-{{ project.slug }}">{{ project.name }}</h2>
-      </div>
-      <button class="project-dialog__close" type="button" data-dialog-close aria-label="Galerie schließen">
-        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
-      </button>
-    </div>
-
-    <p class="project-dialog__summary">{{ project.summary }}</p>
-    {% if project.result %}
-      <p class="project-dialog__result">{{ project.result }}</p>
-    {% endif %}
-
-    <div class="project-dialog__gallery">
-      {% for image in project.gallery %}
-        <figure>
-          <img
-            src="{{ image.src | relative_url }}"
-            alt="{{ image.alt }}"
-            loading="lazy"
-            {% if project.slug == 'lumiere' %}
-              width="1024"
-              height="538"
-            {% elsif project.slug == 'haser-garten' %}
-              width="1024"
-              height="551"
-            {% else %}
-              width="3420"
-              height="1972"
-            {% endif %}
-          >
-          <figcaption>{{ image.caption }}</figcaption>
-        </figure>
-      {% endfor %}
-    </div>
-  </dialog>
-{% endfor %}

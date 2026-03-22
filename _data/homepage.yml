@@ -194,6 +194,14 @@ testimonials:
       width: 417
       height: 608
       initials: "JS"
+    - quote: "Die Arbeit mit Per ist immer 1a. Egal, welches Anliegen aufkommt, er findet eine passende Lösung. Zudem ist die Kommunikation super - schnell, einfach und unkompliziert. Was ich ihm ebenso hoch anrechne, sind seine Ideen zur Optimierung. Er setzt nicht nur gut um, sondern gibt sinnvolles Feedback, um die Dinge noch besser zu machen. Ich kann ihn jedem empfehlen, der auf der Suche nach einem sympathischen und engagierten Partner für seinen Webauftritt ist!"
+      name: "Fabian Schindler"
+      role: "Personal Trainer und Coach bei WIKUS Programming"
+      image: "/assets/images/testimonials/fabian-schindler.webp"
+      image_alt: "Fabian Schindler"
+      width: 2247
+      height: 3371
+      initials: "FS"
     - quote: "Danke, Per, für meine neue Homepage! Ich bin rundum glücklich. Visuell wie technisch einfach top. Vom ersten Gespräch an war alles professionell, durchdacht und blitzschnell umgesetzt. Ich bin dir sehr dankbar und empfehle dich von Herzen weiter."
       name: "Astrid Groh"
       role: "Gründerin InBewegung"
@@ -222,18 +230,18 @@ about:
   intro: "Gemeinsam entstehen Websites, die nicht nur gut aussehen, sondern Ergebnisse bringen."
   people:
     - name: "Simon Kröner"
-      role: "Sales-Strategie & Positionierung"
+      role: "Vertrieb, Design & Branding"
       image: "/assets/images/people/simon-kroener.webp"
       image_alt: "Simon Kröner"
       width: 2277
       height: 3325
       text: "Simon bringt Vertrieb, Positionierung und den Blick dafür, was Kunden wirklich überzeugt."
     - name: "Per Starke"
-      role: "Design & technische Umsetzung"
-      image: "/assets/images/people/per-starke.webp"
+      role: "Struktur, Design & technische Umsetzung"
+      image: "/assets/images/people/per-starke-2.webp"
       image_alt: "Per Starke"
-      width: 4024
-      height: 5487
+      width: 3972
+      height: 5417
       text: "Per sorgt für klare Struktur, ruhiges Design und eine technisch starke Umsetzung."
   cta:
     label: "Mehr über uns erfahren"

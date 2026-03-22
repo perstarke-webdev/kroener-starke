@@ -1,0 +1,141 @@
+{% assign legal_provider_name = "Per Starke" %}
+{% assign legal_address_line_1 = "Willi-Lauf Allee 43" %}
+{% assign legal_address_line_2 = "D-50858 Köln" %}
+{% assign legal_email = "info@perstarke-webdev.de" %}
+{% assign legal_display_email = "info_at_perstarke-webdev.de" %}
+{% assign legal_phone = "+49 160 93268817" %}
+
+<section class="hero-section legal-page__hero">
+  <div class="shell hero-section__inner legal-page__hero-inner">
+    <div class="hero-section__copy legal-page__hero-copy">
+      <p class="section-label section-label--hero">Rechtliches</p>
+      <h1>Impressum &amp; Datenschutz</h1>
+      <p class="hero-section__subtitle">Alle rechtlichen Informationen zu diesem Webauftritt, zur Kontaktaufnahme und zur Verarbeitung personenbezogener Daten.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--cream legal-page__body">
+  <div class="shell legal-page__grid">
+    <aside class="legal-page__aside">
+      <div class="legal-page__aside-card">
+        <p class="section-label section-label--dark">Schnellnavigation</p>
+        <ul class="legal-page__anchor-list">
+          <li><a href="#anbieter">Anbieter</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+          <li><a href="#geltungsbereich">Geltungsbereich</a></li>
+          <li><a href="#zugriffsdaten">Zugriffsdaten</a></li>
+          <li><a href="#hosting">Hosting</a></li>
+          <li><a href="#kontaktaufnahme">Kontaktaufnahme</a></li>
+          <li><a href="#formspark">Kontaktformulare</a></li>
+          <li><a href="#cookies">Cookies &amp; Tracking</a></li>
+          <li><a href="#rechte">Deine Rechte</a></li>
+          <li><a href="#links">Haftung für Links</a></li>
+          <li><a href="#urheberrecht">Urheberrecht</a></li>
+        </ul>
+      </div>
+
+      <div class="legal-page__aside-card legal-page__aside-card--soft">
+        <h3>Direkter Kontakt</h3>
+        <p>Bei Rückfragen zu Datenschutz oder diesem Auftritt erreichst du uns direkt unter:</p>
+        <a class="site-footer__link" href="mailto:{{ legal_email }}">{{ legal_display_email }}</a>
+        <a class="site-footer__link" href="tel:{{ legal_phone | replace: ' ', '' }}">{{ legal_phone }}</a>
+      </div>
+    </aside>
+
+    <div class="legal-page__content">
+      <section class="legal-section" id="anbieter">
+        <h2>Anbieter und verantwortliche Personen</h2>
+        <p>{{ legal_provider_name }}<br>{{ legal_address_line_1 }}<br>{{ legal_address_line_2 }}</p>
+      </section>
+
+      <section class="legal-section" id="kontakt">
+        <h2>Kontakt</h2>
+        <p>Telefon: <a href="tel:{{ legal_phone | replace: ' ', '' }}">{{ legal_phone }}</a><br>E-Mail: <a href="mailto:{{ legal_email }}">{{ legal_display_email }}</a></p>
+      </section>
+
+      <section class="legal-section" id="geltungsbereich">
+        <h2>Geltungsbereich</h2>
+        <p>Diese Datenschutzerklärung klärt Nutzer über die Art, den Umfang und die Zwecke der Erhebung und Verwendung personenbezogener Daten durch den vorstehend genannten Anbieter auf dieser Website auf. Die rechtlichen Grundlagen des Datenschutzes ergeben sich insbesondere aus der Datenschutzgrundverordnung (DSGVO) und den jeweils anwendbaren nationalen Datenschutzvorschriften.</p>
+      </section>
+
+      <section class="legal-section" id="zugriffsdaten">
+        <h2>Zugriffsdaten / Server-Logfiles</h2>
+        <p>Beim Besuch dieser Website können aus technischen Gründen Zugriffsdaten verarbeitet werden. Dazu können insbesondere Name der abgerufenen Webseite, Datei, Datum und Uhrzeit des Abrufs, übertragene Datenmenge, Meldung über erfolgreichen Abruf, Browsertyp nebst Version, Betriebssystem, Referrer-URL, IP-Adresse und der anfragende Provider gehören.</p>
+        <p>Diese Daten dienen ausschließlich der technischen Bereitstellung, Stabilität und Sicherheit des Webangebots. Eine Zusammenführung dieser Daten mit anderen Datenquellen erfolgt nicht.</p>
+      </section>
+
+      <section class="legal-section" id="hosting">
+        <h2>Website-Hosting</h2>
+        <p>Diese Website wird aktuell über GitHub Pages bereitgestellt. Im Rahmen des Hostings können technisch notwendige Daten verarbeitet werden, um die sichere und stabile Auslieferung der Website sicherzustellen.</p>
+        <p>Rechtsgrundlage für diese Verarbeitung ist Art. 6 Abs. 1 lit. f DSGVO. Das berechtigte Interesse liegt in der sicheren, performanten und zuverlässigen Bereitstellung dieses Webangebots.</p>
+      </section>
+
+      <section class="legal-section" id="kontaktaufnahme">
+        <h2>Kontaktaufnahme</h2>
+        <p>Bei der Kontaktaufnahme mit dem Anbieter, zum Beispiel per E-Mail oder über ein Formular auf dieser Website, werden die Angaben des Nutzers zwecks Bearbeitung der Anfrage sowie für den Fall, dass Anschlussfragen entstehen, gespeichert.</p>
+        <p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO im Rahmen vorvertraglicher Maßnahmen sowie Art. 6 Abs. 1 lit. f DSGVO aufgrund des berechtigten Interesses an einer geordneten und nachvollziehbaren Bearbeitung von Anfragen.</p>
+      </section>
+
+      <section class="legal-section" id="formspark">
+        <h2>Kontaktformulare (Formspark)</h2>
+        <p>Für die Kontaktformulare auf dieser Website verwenden wir den Dienst Formspark der Formspark LLC, USA. Wenn du das Projektformular oder den Website-Check nutzt, werden die eingegebenen Daten über Formspark verarbeitet und an uns weitergeleitet.</p>
+        <p>Verarbeitete Daten können insbesondere Name, E-Mail-Adresse, Website, Nachrichteninhalt, Domain, Telefonnummer sowie der Zeitpunkt der Übermittlung sein.</p>
+        <p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO im Rahmen vorvertraglicher Maßnahmen sowie Art. 6 Abs. 1 lit. f DSGVO aufgrund des berechtigten Interesses an einer effizienten und verlässlichen Formularabwicklung. Die Datenübertragung in die USA erfolgt auf Grundlage geeigneter Garantien gemäß Art. 46 DSGVO, insbesondere über Standardvertragsklauseln, soweit diese anwendbar sind.</p>
+        <p>Weitere Informationen zum Datenschutz bei Formspark findest du unter <a href="https://formspark.io/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">https://formspark.io/legal/privacy-policy/</a>.</p>
+      </section>
+
+      <section class="legal-section" id="kommentare">
+        <h2>Kommentare und Beiträge</h2>
+        <p>Diese Website enthält keine Kommentarfunktion. Nutzer können daher keine öffentlichen Beiträge oder Kommentare auf dieser Website hinterlassen.</p>
+      </section>
+
+      <section class="legal-section" id="cookies">
+        <h2>Cookies und Tracking</h2>
+        <p>Diese Website ist grundsätzlich cookiefrei und verwendet kein Tracking zu Werbe- oder Analysezwecken. Wir selbst setzen keine Analyse- oder Werbetools ein und erstellen keine personenbezogenen Nutzungsprofile.</p>
+        <p>Technisch notwendige Verarbeitungsvorgänge im Rahmen von Hosting, Auslieferung und Formularübermittlung bleiben davon unberührt.</p>
+      </section>
+
+      <section class="legal-section" id="rechte">
+        <h2>Ihre Rechte als betroffene Person</h2>
+        <p>Sie haben im Rahmen der gesetzlichen Vorschriften insbesondere folgende Rechte bezüglich Ihrer personenbezogenen Daten:</p>
+        <ul class="legal-list">
+          <li>Auskunft gemäß Art. 15 DSGVO</li>
+          <li>Berichtigung gemäß Art. 16 DSGVO</li>
+          <li>Löschung gemäß Art. 17 DSGVO</li>
+          <li>Einschränkung der Verarbeitung gemäß Art. 18 DSGVO</li>
+          <li>Widerspruch gemäß Art. 21 DSGVO</li>
+          <li>Datenübertragbarkeit gemäß Art. 20 DSGVO</li>
+          <li>Widerruf erteilter Einwilligungen mit Wirkung für die Zukunft</li>
+        </ul>
+      </section>
+
+      <section class="legal-section" id="beschwerde">
+        <h2>Beschwerderecht</h2>
+        <p>Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde über die Verarbeitung Ihrer personenbezogenen Daten durch uns zu beschweren.</p>
+      </section>
+
+      <section class="legal-section" id="sicherheit">
+        <h2>Datensicherheit</h2>
+        <p>Wir treffen geeignete technische und organisatorische Sicherheitsmaßnahmen, um personenbezogene Daten gegen zufällige oder vorsätzliche Manipulationen, Verlust, Zerstörung oder gegen unbefugten Zugriff Dritter zu schützen.</p>
+      </section>
+
+      <section class="legal-section" id="links">
+        <h2>Haftung für Links</h2>
+        <p>Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber verantwortlich.</p>
+        <p>Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle ist ohne konkrete Anhaltspunkte einer Rechtsverletzung jedoch nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
+      </section>
+
+      <section class="legal-section" id="urheberrecht">
+        <h2>Urheberrecht</h2>
+        <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem geltenden Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des jeweiligen Autors beziehungsweise Erstellers.</p>
+        <p>Soweit Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Sollten Sie dennoch auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
+      </section>
+
+      <section class="legal-section" id="aenderungen">
+        <h2>Änderungen dieser Datenschutzerklärung</h2>
+        <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen.</p>
+      </section>
+    </div>
+  </div>
+</section>

@@ -45,7 +45,7 @@ classes:
     </div>
 
     <div class="bio-section__media bio-section__media--simon">
-      <img src="{{ '/assets/images/people/simon-kroener.webp' | relative_url }}" alt="Simon Kröner" width="2277" height="3325" loading="lazy">
+      <img src="{{ '/assets/images/people/simon-kröner-2.webp' | relative_url }}" alt="Simon Kröner" width="4127" height="6190" loading="lazy">
     </div>
   </div>
 </section>

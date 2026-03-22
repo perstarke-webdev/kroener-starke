@@ -44,6 +44,11 @@
     var groups = [
       { selector: ".hero-section__copy > *", step: 90 },
       { selector: ".hero-board", step: 0 },
+      { selector: ".bio-section__intro > *", step: 45 },
+      { selector: ".bio-section__body > *", step: 50 },
+      { selector: ".bio-section__media", step: 0 },
+      { selector: ".about-page__why .section-heading > *", step: 45 },
+      { selector: ".about-page__why-card", step: 70 },
       { selector: "#website-check .section-copy > *", step: 70 },
       { selector: "#website-check .audit-card > *", step: 65 },
       { selector: "#proof .section-heading > *", step: 40 },
@@ -330,7 +335,7 @@
   }
 
   function submitFormsparkLead(endpoint, payload) {
-    var formData = new window.FormData();
+    var formData = new window.URLSearchParams();
 
     Object.keys(payload).forEach(function (key) {
       formData.append(key, payload[key]);
@@ -340,16 +345,23 @@
       .fetch(endpoint, {
         method: "POST",
         headers: {
-          Accept: "application/json"
+          Accept: "application/json",
+          "Content-Type": "application/x-www-form-urlencoded"
         },
-        body: formData
+        body: formData.toString()
       })
       .then(function (response) {
         if (!response.ok) {
           throw new Error("Formspark request failed");
         }
 
-        return response.text();
+        return response.json().then(function (data) {
+          if (!data || !data.domain || !data.phone) {
+            throw new Error("Formspark request failed");
+          }
+
+          return data;
+        });
       });
   }
 

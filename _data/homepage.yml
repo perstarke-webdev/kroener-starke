@@ -226,6 +226,11 @@ framework:
   cta:
     label: "Denkweise ansehen"
     url: "https://perstarke-webdev.de/aim-create-promote-framework"
+  visual:
+    image: "/assets/images/framework/acp-flow.png"
+    image_alt: "ACP-Framework mit den Schritten AIM, CREATE, PROMOTE und MOMENTUM"
+    width: 1372
+    height: 393
 
 about:
   label: ""

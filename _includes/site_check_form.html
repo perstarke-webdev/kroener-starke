@@ -8,9 +8,20 @@
   data-form-mode="{{ site.form_mode }}"
   data-form-endpoint="{{ site.formspark_endpoint }}"
   data-form-context="{{ include.context | default: 'homepage' }}"
+  data-form-min-submit-ms="{{ site.form_min_submit_ms | default: 1800 }}"
   novalidate
 >
   <input type="hidden" name="source" value="{{ include.context | default: 'homepage' }}">
+  <div class="form-honeypot" aria-hidden="true">
+    <label for="{{ form_id }}-company">Bitte dieses Feld leer lassen</label>
+    <input
+      id="{{ form_id }}-company"
+      name="_honeypot"
+      type="text"
+      tabindex="-1"
+      autocomplete="off"
+    >
+  </div>
 
   <div class="site-check-form__row">
     <div class="form-field">

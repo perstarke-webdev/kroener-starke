@@ -241,6 +241,15 @@ classes:
     <a class="button button--secondary" href="{{ home.framework.cta.url }}" target="_blank" rel="noopener noreferrer">
       {{ home.framework.cta.label }}
     </a>
+    <div class="framework-visual framework-visual--embedded" aria-hidden="true">
+      <img
+        src="{{ home.framework.visual.image | relative_url }}"
+        alt="{{ home.framework.visual.image_alt }}"
+        width="{{ home.framework.visual.width }}"
+        height="{{ home.framework.visual.height }}"
+        loading="lazy"
+      >
+    </div>
   </div>
 </section>
 

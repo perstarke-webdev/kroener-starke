@@ -19,6 +19,7 @@ og_image: "/assets/images/brand/logo-ks.png"
 draft_mode: false
 form_mode: "formspark"
 formspark_endpoint: "https://submit-form.com/qmOOtdX2O"
+form_min_submit_ms: 1800
 placeholder_content: true
 
 branding:

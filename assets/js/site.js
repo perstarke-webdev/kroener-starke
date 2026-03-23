@@ -424,6 +424,31 @@
       });
   }
 
+  function refreshFormGuard(form) {
+    form.setAttribute("data-form-started-at", String(Date.now()));
+  }
+
+  function getHoneypotValue(form) {
+    var field = form.querySelector("input[name='_honeypot']");
+
+    if (!field) {
+      return "";
+    }
+
+    return (field.value || "").trim();
+  }
+
+  function isFormSubmittedTooFast(form) {
+    var startedAt = parseInt(form.getAttribute("data-form-started-at"), 10);
+    var minSubmitMs = parseInt(form.getAttribute("data-form-min-submit-ms"), 10);
+
+    if (Number.isNaN(startedAt) || Number.isNaN(minSubmitMs)) {
+      return false;
+    }
+
+    return Date.now() - startedAt < minSubmitMs;
+  }
+
   function initForms() {
     var forms = document.querySelectorAll("[data-site-check-form]");
 
@@ -432,6 +457,7 @@
     }
 
     forms.forEach(function (form) {
+      refreshFormGuard(form);
       var formMode = form.getAttribute("data-form-mode") || "demo";
       var formEndpoint = form.getAttribute("data-form-endpoint") || "";
       var status = form.querySelector("[data-form-status]");
@@ -455,6 +481,19 @@
         phoneError.textContent = "";
         domainInput.classList.remove("is-invalid");
         phoneInput.classList.remove("is-invalid");
+
+        if (getHoneypotValue(form)) {
+          form.reset();
+          status.textContent = "";
+          success.hidden = false;
+          refreshFormGuard(form);
+          return;
+        }
+
+        if (isFormSubmittedTooFast(form)) {
+          status.textContent = "Bitte versuche es in einem Moment erneut.";
+          return;
+        }
 
         if (!parsedDomain) {
           domainError.textContent = "Bitte gib eine gültige Domain ein.";
@@ -490,6 +529,7 @@
             form.reset();
             status.textContent = "";
             success.hidden = false;
+            refreshFormGuard(form);
           })
           .catch(function () {
             status.textContent =
@@ -510,6 +550,7 @@
     }
 
     forms.forEach(function (form) {
+      refreshFormGuard(form);
       var formMode = form.getAttribute("data-form-mode") || "demo";
       var formEndpoint = form.getAttribute("data-form-endpoint") || "";
       var status = form.querySelector("[data-form-status]");
@@ -543,6 +584,19 @@
         emailInput.classList.remove("is-invalid");
         websiteInput.classList.remove("is-invalid");
         messageInput.classList.remove("is-invalid");
+
+        if (getHoneypotValue(form)) {
+          form.reset();
+          status.textContent = "";
+          success.hidden = false;
+          refreshFormGuard(form);
+          return;
+        }
+
+        if (isFormSubmittedTooFast(form)) {
+          status.textContent = "Bitte versuche es in einem Moment erneut.";
+          return;
+        }
 
         if (!parsedName) {
           nameError.textContent = "Bitte gib deinen Namen ein.";
@@ -593,6 +647,7 @@
             form.reset();
             status.textContent = "";
             success.hidden = false;
+            refreshFormGuard(form);
           })
           .catch(function () {
             status.textContent =
@@ -621,17 +676,28 @@
     }
 
     triggers.forEach(function (trigger) {
-      trigger.addEventListener("click", function () {
+      trigger.addEventListener("click", function (event) {
         var dialog = document.getElementById(
           trigger.getAttribute("data-dialog-target")
         );
+        var closeButton;
 
         if (!dialog || typeof dialog.showModal !== "function") {
           return;
         }
 
+        event.preventDefault();
         dialog.showModal();
         document.body.classList.add("dialog-open");
+        closeButton = dialog.querySelector("[data-dialog-close]");
+
+        if (closeButton && typeof closeButton.focus === "function") {
+          try {
+            closeButton.focus({ preventScroll: true });
+          } catch (error) {
+            closeButton.focus();
+          }
+        }
       });
     });
 

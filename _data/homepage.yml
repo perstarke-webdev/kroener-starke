@@ -7,7 +7,7 @@ hero:
   eyebrow: "Webdesign · Branding · Performance"
   title: "Websites, die verkaufen."
   subtitle: "Webdesign, das niemand vergisst und Anfragen, die nicht mehr aufhören."
-  support: "Starke Sales-Strategie trifft auf bewährte Umsetzung."
+  support: ""
   primary_cta:
     label: "Projekt anfragen"
     url: "/kontakt/"
@@ -15,7 +15,7 @@ hero:
     label: "Portfolio ansehen"
     url: "#arbeiten"
   pills: []
-  board_title: "Starke Sales-Strategie trifft auf bewährte Umsetzung."
+  board_title: ""
   board_items:
     - "Analyse und Optimierung deiner aktuellen Position"
     - "Verkaufsstarkes, vertrauensbildendes Design"
@@ -33,7 +33,7 @@ pain:
     domain_placeholder: "beispiel.ch"
     phone_label: "Deine Telefonnummer"
     phone_placeholder: "+41 00 000 00 00"
-    submit_label: "Website prüfen lassen"
+    submit_label: "Website analysieren"
     success_message: "Danke, wir melden uns bei dir."
     privacy_note: ""
 
@@ -104,9 +104,9 @@ trust:
 
 services:
   label: ""
-  title: "Wir machen eine Sache: Websites, die verkaufen."
-  intro: "Alles, was wir tun, zahlt darauf ein. Wir kombinieren Strategie, Design und Umsetzung zu einem System, das dir konstant neue Anfragen bringt."
-  track_label: "So entsteht deine Verkaufsmaschine:"
+  title: "Wir machen eine Sache: Websites, die wirken."
+  intro: "Alles, was wir tun, zahlt darauf ein. Wir kombinieren Strategie, Design und Umsetzung zu einem System, das dir konstant neue Anfragen bringt und dich im besten Licht darstellt."
+  track_label: "So entsteht deine neue Website:"
   steps:
     - number: "01"
       title: "Analyse und Optimierung deiner aktuellen Position"
@@ -121,6 +121,9 @@ services:
       title: "Suchmaschinenoptimierter Aufbau"
       text: ""
     - number: "05"
+      title: "Domain, Hosting & Launch"
+      text: ""
+    - number: "06"
       title: "Laufender Support"
       text: ""
 
@@ -249,8 +252,8 @@ about:
 
 final_cta:
   label: ""
-  title: "Bereit für eine Website, die wirklich verkauft?"
-  text: "Wir bauen dir eine Website, die Vertrauen schafft und dir konstant neue Anfragen bringt."
+  title: "Bereit für deine neue Website?"
+  text: "Wir bauen dir eine moderne Website, die Vertrauen schafft, dich im besten Licht darstellt und konstant neue Anfragen bringt."
   primary_cta:
     label: "Projekt anfragen"
     url: "/kontakt/"

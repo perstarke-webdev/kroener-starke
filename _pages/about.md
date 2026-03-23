@@ -12,7 +12,7 @@ classes:
     <div class="hero-section__copy about-page__hero-copy">
       <p class="section-label section-label--hero">Simon Kröner · Per Starke</p>
       <h1>Zwei Stärken. Ein klares Ziel.</h1>
-      <p class="hero-section__subtitle">Kröner &amp; Starke verbindet zwei Perspektiven, die selten wirklich zusammenkommen:<br>Vertrieb und Positionierung auf der einen Seite – klare Umsetzung auf der anderen.</p>
+      <p class="hero-section__subtitle">Kröner &amp; Starke verbindet zwei Perspektiven, die selten wirklich zusammenkommen:<br>Vertrieb und Positionierung auf der einen Seite, klare Umsetzung auf der anderen.</p>
       <div class="about-page__hero-text">
         <p class="section-lead section-lead--light">Wir bauen Websites nicht als Designprojekt, sondern als Werkzeug für Wachstum.</p>
         <p class="section-lead section-lead--light">Jede Entscheidung folgt dabei einem einfachen Ziel: Vertrauen schaffen und Anfragen generieren.</p>
@@ -42,13 +42,13 @@ classes:
       <div class="bio-section__intro">
         <h2>Simon Kröner</h2>
         <p class="bio-section__role">Vertrieb, Design &amp; Branding</p>
-        <p class="bio-section__highlight">Simon bringt eine seltene Kombination mit: ein ausgeprägtes Gespür für Design und Ästhetik – und gleichzeitig den Antrieb, daraus echte Kundenbeziehungen entstehen zu lassen.</p>
+        <p class="bio-section__highlight">Simon bringt eine seltene Kombination mit: ein ausgeprägtes Gespür für Design und Ästhetik, und gleichzeitig den Antrieb, daraus echte Kundenbeziehungen entstehen zu lassen.</p>
       </div>
 
       <div class="bio-section__body">
         <p>Mit Erfahrung in Onlinemarketing, Webdesign und Vertrieb ist er trotz seines jungen Alters bereits tief in der Branche verankert.</p>
         <p>Seine Stärke liegt darin, Projekte aktiv anzubahnen, Kunden zu überzeugen und gleichzeitig auf Augenhöhe im Design- und Branding-Prozess mitzuwirken.</p>
-        <p>Simon stammt aus Bern und bringt die bekannte Schweizer Bodenständigkeit mit – kombiniert mit echtem Unternehmergeist und dem klaren Ziel, in den kommenden Jahren etwas Substanzielles aufzubauen.</p>
+        <p>Simon stammt aus Bern und bringt die bekannte Schweizer Bodenständigkeit mit, kombiniert mit echtem Unternehmergeist und dem klaren Ziel, in den kommenden Jahren etwas Substanzielles aufzubauen.</p>
       </div>
     </div>
 
@@ -69,9 +69,9 @@ classes:
 
       <div class="bio-section__body">
         <p>Mit einem Hintergrund in Kognitionswissenschaft und einem M.Sc. in Angewandter Informatik entwickelt er Websites, die klar aufgebaut sind, Ziele unterstützen und Vertrauen aufbauen.</p>
-        <p>Sein Fokus liegt auf Struktur, Verständlichkeit und Performance – nicht auf unnötigen Effekten.</p>
+        <p>Sein Fokus liegt auf Struktur, Verständlichkeit und Performance, nicht auf unnötigen Effekten.</p>
         <p>Diese Denkweise zeigt sich auch außerhalb der Arbeit.</p>
-        <p>Ob im Powerlifting, auf Reisen oder beim Solo-Skydiving – Per sucht bewusst Situationen, in denen Fokus, Kontrolle und Umsetzung entscheidend sind.</p>
+        <p>Ob im Powerlifting, auf Reisen oder beim Solo-Skydiving: Per sucht bewusst Situationen, in denen Fokus, Kontrolle und Umsetzung entscheidend sind.</p>
         <p>Am Ende geht es immer um dasselbe: Dinge nicht nur zu planen, sondern konsequent umzusetzen.</p>
       </div>
     </div>
@@ -91,7 +91,7 @@ classes:
     <div class="about-page__why-grid">
       <article class="about-page__why-card about-page__why-card--pain">
         <p class="section-lead">Viele Websites scheitern an genau einer Stelle:</p>
-        <p>Entweder sie sehen gut aus, verkaufen aber nicht – oder sie sind funktional, aber nicht überzeugend.</p>
+        <p>Entweder sie sehen gut aus und verkaufen nicht, oder sie sind funktional, aber nicht überzeugend.</p>
       </article>
       <article class="about-page__why-card about-page__why-card--solution">
         <p>Wir verbinden beides von Anfang an.</p>

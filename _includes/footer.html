@@ -1,6 +1,7 @@
+{% assign legal = site.data.legal %}
 <div class="site-footer">
   <div class="shell site-footer__topbar">
-    <p class="site-footer__prompt">Bereit für eine Website, die verkauft?</p>
+    <p class="site-footer__prompt">Bereit für deine neue Website?</p>
     <a class="button button--ghost button--small" href="{{ '/kontakt/' | relative_url }}">Projekt anfragen</a>
   </div>
 
@@ -32,7 +33,8 @@
       <h3>Kontakt</h3>
       <ul class="site-footer__list">
         <li>{{ site.title }}</li>
-        <li><a class="site-footer__link" href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></li>
+        <li><a class="site-footer__link" href="mailto:{{ legal.simon.email }}">{{ legal.simon.email }}</a></li>
+        <li><a class="site-footer__link" href="mailto:{{ legal.per.email }}">{{ legal.per.email }}</a></li>
         <li><a class="site-footer__link" href="tel:{{ site.contact.phone | replace: ' ', '' }}">{{ site.contact.phone }}</a></li>
       </ul>
     </div>

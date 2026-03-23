@@ -14,7 +14,10 @@ classes:
 <section class="hero-section">
   <div class="shell hero-section__inner">
     <div class="hero-section__copy">
-      <p class="section-label section-label--hero">{{ home.hero.eyebrow }}</p>
+      <p class="section-label section-label--hero">
+        <span class="status-dot" aria-hidden="true"></span>
+        {{ home.hero.eyebrow }}
+      </p>
       <h1>{{ home.hero.title }}</h1>
       <p class="hero-section__subtitle">{{ home.hero.subtitle }}</p>
 
@@ -46,7 +49,9 @@ classes:
           decoding="async"
         >
       </div>
-      <p class="hero-board__title">{{ home.hero.board_title }}</p>
+      {% if home.hero.board_title != blank %}
+        <p class="hero-board__title">{{ home.hero.board_title }}</p>
+      {% endif %}
     </aside>
   </div>
 </section>
@@ -133,7 +138,7 @@ classes:
       <p class="section-kicker">{{ home.services.track_label }}</p>
     </div>
 
-    <div class="process-track">
+    <div class="process-track home-process-track">
       {% for step in home.services.steps %}
         <article class="process-card">
           <p class="process-card__number">{{ step.number }}</p>

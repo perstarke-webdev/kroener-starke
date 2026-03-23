@@ -7,6 +7,7 @@ classes:
 ---
 {% assign home = site.data.homepage %}
 {% assign contact = site.data.contact_page %}
+{% assign legal = site.data.legal %}
 
 <section class="hero-section contact-page__hero">
   <div class="shell hero-section__inner contact-page__hero-inner">
@@ -37,7 +38,7 @@ classes:
         <h3>{{ contact.direct.title }}</h3>
         <p>{{ contact.direct.intro }}</p>
         <div class="contact-page__direct-links">
-          <a class="site-footer__link" href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>
+          <a class="site-footer__link" href="mailto:{{ legal.simon.email }}">{{ legal.simon.email }}</a>
           <a class="site-footer__link" href="tel:{{ site.contact.phone | replace: ' ', '' }}">{{ site.contact.phone }}</a>
         </div>
       </div>

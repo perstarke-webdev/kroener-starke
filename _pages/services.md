@@ -1,7 +1,7 @@
 ---
 title: "Leistungen"
 permalink: /leistungen/
-description: "Websites, die verkaufen – systematisch aufgebaut. Kröner & Starke entwickelt keine Einzelleistungen, sondern ein System für Vertrauen und Anfragen."
+description: "Websites, die verkaufen. Systematisch aufgebaut. Kröner & Starke entwickelt keine Einzelleistungen, sondern ein System für Vertrauen und Anfragen."
 classes:
   - services-page
 ---
@@ -10,8 +10,8 @@ classes:
 <section class="hero-section services-page__hero">
   <div class="shell hero-section__inner">
     <div class="hero-section__copy">
-      <p class="section-label section-label--hero">Dein Weg zur Kundenmaschine</p>
-      <h1>Websites, die verkaufen – systematisch aufgebaut.</h1>
+      <p class="section-label section-label--hero">Dein Weg zur neuen Website</p>
+      <h1>Websites, die verkaufen. Systematisch aufgebaut.</h1>
       <p class="hero-section__subtitle">Wir entwickeln keine einzelnen Leistungen.<br>Wir bauen ein System, das darauf ausgelegt ist, Vertrauen zu schaffen und konstant Anfragen zu generieren.</p>
 
       <div class="hero-section__actions">
@@ -40,6 +40,10 @@ classes:
         </article>
         <article class="services-page__hero-step">
           <span>05</span>
+          <p>Domain, Hosting &amp; Launch</p>
+        </article>
+        <article class="services-page__hero-step">
+          <span>06</span>
           <p>Laufende Optimierung &amp; Support</p>
         </article>
       </div>
@@ -75,9 +79,9 @@ classes:
     <div class="services-page__system-layout">
       <article class="services-page__system-panel">
         <div class="services-page__system-copy">
-          <p>Jede Entscheidung zahlt auf dasselbe Ziel ein – mehr Anfragen für dein Business.</p>
           <p>Strategie, Design und Umsetzung greifen von Anfang an ineinander.</p>
           <p>So entsteht kein Flickwerk, sondern ein System, das funktioniert.</p>
+          <p>Jede Entscheidung zahlt auf dasselbe Ziel ein: mehr Anfragen für dein Business und eine moderne Website, die dich im besten Licht darstellt.</p>
         </div>
       </article>
 
@@ -101,7 +105,7 @@ classes:
         <p class="process-card__number">01</p>
         <h3>Analyse &amp; Positionierung</h3>
         <p>Wir schauen uns an, wo du aktuell stehst, wie du wahrgenommen wirst und wo du Kunden verlierst.</p>
-        <p>Wir schärfen deine Positionierung so, dass klar wird:<br>warum du die richtige Wahl bist – und warum man sich jetzt melden sollte.</p>
+        <p>Wir schärfen deine Positionierung so, dass klar wird:<br>warum du die richtige Wahl bist und warum man sich jetzt melden sollte.</p>
       </article>
 
       <article class="process-card">
@@ -115,18 +119,25 @@ classes:
         <p class="process-card__number">03</p>
         <h3>Technisch starke Umsetzung</h3>
         <p>Eine Website muss nicht nur gut aussehen, sondern zuverlässig funktionieren.</p>
-        <p>Wir setzen dein Projekt performant, stabil und skalierbar um –<br>ohne unnötige Komplexität.</p>
+        <p>Wir setzen dein Projekt performant, stabil und skalierbar um,<br>ohne unnötige Komplexität.</p>
       </article>
 
       <article class="process-card">
         <p class="process-card__number">04</p>
         <h3>Struktur für Sichtbarkeit (SEO)</h3>
-        <p>Wir bauen deine Website so auf, dass sie gefunden werden kann –<br>nicht nur technisch, sondern auch inhaltlich.</p>
+        <p>Wir bauen deine Website so auf, dass sie gefunden werden kann,<br>nicht nur technisch, sondern auch inhaltlich.</p>
         <p>Klare Seitenstruktur, richtige Inhalte, saubere Basis.</p>
       </article>
 
       <article class="process-card">
         <p class="process-card__number">05</p>
+        <h3>Domain, Hosting &amp; Launch</h3>
+        <p>Eine Website ist erst dann fertig, wenn sie sauber online geht und stabil läuft.</p>
+        <p>Wir kümmern uns um Domain, Hosting, technische Einrichtung und Livegang, damit am Ende alles bereit ist und nichts liegen bleibt.</p>
+      </article>
+
+      <article class="process-card">
+        <p class="process-card__number">06</p>
         <h3>Laufende Optimierung &amp; Support</h3>
         <p>Eine gute Website ist kein einmaliges Projekt.</p>
         <p>Wir begleiten dich weiter, analysieren Verhalten und verbessern gezielt dort, wo Potenzial liegt.</p>
@@ -142,7 +153,7 @@ classes:
     </div>
 
     <div class="services-page__outcomes-card">
-      <p class="section-lead">Keine Website, die einfach nur online ist.</p>
+      <p class="section-lead">Keine Website, die einfach nur online ist und Geld fürs Hosting kostet.</p>
       <p>Sondern ein System, das:</p>
       <ul class="check-list">
         <li>
@@ -151,11 +162,11 @@ classes:
         </li>
         <li>
           <span class="inline-icon inline-icon--check" aria-hidden="true">&#10003;</span>
-          <span>deine Leistung klar kommuniziert</span>
+          <span>Besucher in Anfragen verwandelt</span>
         </li>
         <li>
           <span class="inline-icon inline-icon--check" aria-hidden="true">&#10003;</span>
-          <span>Besucher gezielt in Anfragen verwandelt</span>
+          <span>dein Unternehmen professionell widerspiegelt</span>
         </li>
       </ul>
     </div>
@@ -170,7 +181,7 @@ classes:
 
     <div class="services-page__difference-copy">
       <p class="section-lead section-lead--light">Viele bauen Websites.<br>Wenige bauen Systeme, die verkaufen.</p>
-      <p>Der Unterschied liegt nicht nur im Design oder im Code – sondern darin, wie alles zusammenspielt.</p>
+      <p>Der Unterschied liegt nicht nur im Design oder im Code, sondern darin, wie alles zusammenspielt.</p>
       <p>Genau darauf liegt unser Fokus.</p>
     </div>
   </div>

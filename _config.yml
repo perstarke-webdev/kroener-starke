@@ -30,7 +30,7 @@ branding:
     per_url: "https://perstarke-webdev.de/"
 
 contact:
-  email: "info@perstarke-webdev.de"
+  email: "per.starke@kroener-starke.ch"
   phone: "+41 79 138 92 45"
   placeholder_note: ""
 
@@ -46,7 +46,7 @@ legal:
     address_line_1: "Chrotegässli 28"
     postal_city: "3065 Bolligen, Bern"
     country: "Schweiz"
-    email: "simon.kroener@bluewin.ch"
+    email: "simon.kroener@kroener-starke.ch"
     website: "https://www.simonkroener.ch"
   per:
     business_name: "Per Starke Web Development"
@@ -55,8 +55,8 @@ legal:
     address_line_1: "Willi-Lauf Allee 43"
     postal_city: "D-50858 Köln"
     country: "Deutschland"
-    email: "info@perstarke-webdev.de"
-    display_email: "info_at_perstarke-webdev.de"
+    email: "per.starke@kroener-starke.ch"
+    display_email: "per.starke@kroener-starke.ch"
     phone: "+49 160 93268817"
 
 social:

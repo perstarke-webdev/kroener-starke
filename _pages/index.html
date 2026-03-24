@@ -86,7 +86,7 @@ classes:
 <section class="section section--deep" id="proof">
   <div class="shell">
     <div class="section-heading section-heading--center">
-      <p class="section-label section-label--light">{{ home.trust.title }}</p>
+      <p class="section-label section-label--light"><span class="status-dot" aria-hidden="true"></span>{{ home.trust.title }}</p>
       <h2 class="visually-hidden">{{ home.trust.title }}</h2>
       {% if home.trust.intro %}
         <p class="section-lead section-lead--light">{{ home.trust.intro }}</p>
@@ -131,7 +131,7 @@ classes:
   <div class="shell">
     <div class="section-heading">
       {% if home.services.label != blank %}
-        <p class="section-label section-label--dark">{{ home.services.label }}</p>
+        <p class="section-label section-label--dark"><span class="status-dot" aria-hidden="true"></span>{{ home.services.label }}</p>
       {% endif %}
       <h2>{{ home.services.title }}</h2>
       <p class="section-lead">{{ home.services.intro }}</p>
@@ -156,7 +156,7 @@ classes:
   <div class="shell">
     <div class="section-heading">
       {% if home.portfolio.label != blank %}
-        <p class="section-label section-label--dark">{{ home.portfolio.label }}</p>
+        <p class="section-label section-label--dark"><span class="status-dot" aria-hidden="true"></span>{{ home.portfolio.label }}</p>
       {% endif %}
       <h2>{{ home.portfolio.title }}</h2>
       {% if home.portfolio.intro %}
@@ -172,7 +172,7 @@ classes:
   <div class="shell">
     <div class="section-heading section-heading--center">
       {% if home.testimonials.label != blank %}
-        <p class="section-label section-label--light">{{ home.testimonials.label }}</p>
+        <p class="section-label section-label--light"><span class="status-dot" aria-hidden="true"></span>{{ home.testimonials.label }}</p>
       {% endif %}
       <h2>{{ home.testimonials.title }}</h2>
     </div>
@@ -230,7 +230,7 @@ classes:
   <div class="shell framework-card">
     <div>
       {% if home.framework.label != blank %}
-        <p class="section-label section-label--dark">{{ home.framework.label }}</p>
+        <p class="section-label section-label--dark"><span class="status-dot" aria-hidden="true"></span>{{ home.framework.label }}</p>
       {% endif %}
       <h2>{{ home.framework.title }}</h2>
       <p class="section-lead">
@@ -257,7 +257,7 @@ classes:
   <div class="shell about-grid">
     <div class="section-copy">
       {% if home.about.label != blank %}
-        <p class="section-label section-label--dark">{{ home.about.label }}</p>
+        <p class="section-label section-label--dark"><span class="status-dot" aria-hidden="true"></span>{{ home.about.label }}</p>
       {% endif %}
       <h2>{{ home.about.title }}</h2>
       <p class="section-lead">{{ home.about.people[0].text }}</p>
@@ -290,7 +290,7 @@ classes:
   <div class="shell cta-grid">
     <div class="section-copy">
       {% if home.final_cta.label != blank %}
-        <p class="section-label section-label--light">{{ home.final_cta.label }}</p>
+        <p class="section-label section-label--light"><span class="status-dot" aria-hidden="true"></span>{{ home.final_cta.label }}</p>
       {% endif %}
       <h2>{{ home.final_cta.title }}</h2>
       <p class="section-lead section-lead--light">{{ home.final_cta.text }}</p>

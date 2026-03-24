@@ -10,7 +10,7 @@ classes:
 <section class="hero-section about-page__hero">
   <div class="shell hero-section__inner about-page__hero-inner">
     <div class="hero-section__copy about-page__hero-copy">
-      <p class="section-label section-label--hero">Simon Kröner · Per Starke</p>
+      <p class="section-label section-label--hero"><span class="status-dot" aria-hidden="true"></span>Simon Kröner · Per Starke</p>
       <h1>Zwei Stärken. Ein klares Ziel.</h1>
       <p class="hero-section__subtitle">Kröner &amp; Starke verbindet zwei Perspektiven, die selten wirklich zusammenkommen:<br>Vertrieb und Positionierung auf der einen Seite, klare Umsetzung auf der anderen.</p>
       <div class="about-page__hero-text">
@@ -105,7 +105,7 @@ classes:
 <section class="section section--deep section--cta about-page__cta" id="cta">
   <div class="shell cta-grid">
     <div class="section-copy">
-      <p class="section-label section-label--light">Lerne uns kennen</p>
+      <p class="section-label section-label--light"><span class="status-dot" aria-hidden="true"></span>Lerne uns kennen</p>
       <h2>Willst du eine Website, die nicht nur gut aussieht, sondern Ergebnisse bringt?</h2>
       <a class="button button--light" href="{{ '/kontakt/' | relative_url }}">Lass uns sprechen</a>
     </div>

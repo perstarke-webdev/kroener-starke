@@ -40,6 +40,18 @@
     });
   }
 
+  function initSectionLabels() {
+    var labels = document.querySelectorAll(".section-label");
+
+    labels.forEach(function (label) {
+      if ((label.textContent || "").trim() !== "") {
+        return;
+      }
+
+      label.hidden = true;
+    });
+  }
+
   function initRevealAnimations() {
     var groups = [
       { selector: ".bio-section__intro > *", step: 45 },
@@ -821,6 +833,7 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     initCurrentLinks();
+    initSectionLabels();
     initRevealAnimations();
     initHeaderScroll();
     initNav();

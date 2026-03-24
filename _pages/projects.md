@@ -11,7 +11,7 @@ classes:
 <section class="hero-section portfolio-page__hero">
   <div class="shell hero-section__inner portfolio-page__hero-inner">
     <div class="hero-section__copy portfolio-page__hero-copy">
-      <p class="section-label section-label--hero">Unsere zufriedenen Kund:innen</p>
+      <p class="section-label section-label--hero"><span class="status-dot" aria-hidden="true"></span>Unsere zufriedenen Kund:innen</p>
       <h1>Einblick in unsere Arbeit</h1>
       <p class="hero-section__subtitle">Websites, die nicht nur gut aussehen, sondern Ergebnisse bringen.</p>
       <p class="hero-section__support">Jedes Projekt folgt derselben Logik: Vertrauen aufbauen, Klarheit schaffen und Anfragen generieren.</p>

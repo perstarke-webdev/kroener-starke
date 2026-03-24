@@ -12,7 +12,7 @@ classes:
 <section class="hero-section contact-page__hero">
   <div class="shell hero-section__inner contact-page__hero-inner">
     <div class="hero-section__copy contact-page__hero-copy">
-      <p class="section-label section-label--hero">{{ contact.hero.label }}</p>
+      <p class="section-label section-label--hero"><span class="status-dot" aria-hidden="true"></span>{{ contact.hero.label }}</p>
       <h1>{{ contact.hero.title }}</h1>
       <p class="hero-section__subtitle">{{ contact.hero.subtitle }}</p>
       <p class="hero-section__support">{{ contact.hero.support }}</p>
@@ -28,7 +28,7 @@ classes:
 
     <div class="contact-page__aside">
       <div class="audit-card audit-card--dark contact-page__audit-card">
-        <p class="section-label section-label--light">{{ contact.analysis.label }}</p>
+        <p class="section-label section-label--light"><span class="status-dot" aria-hidden="true"></span>{{ contact.analysis.label }}</p>
         <h3>{{ contact.analysis.title }}</h3>
         <p>{{ contact.analysis.text }}</p>
         {% include site_check_form.html id_prefix="contact-check" form=home.pain.form context="contact-check" variant="dark" %}

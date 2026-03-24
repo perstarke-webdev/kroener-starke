@@ -1600,13 +1600,70 @@ p {
 }
 
 .services-page__hero-step {
+  position: relative;
+  isolation: isolate;
   display: grid;
   grid-template-columns: auto minmax(0, 1fr);
   gap: 0.85rem;
   align-items: center;
   padding: 0.95rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.06);
+  color: inherit;
+  text-decoration: none;
+  overflow: hidden;
+  transition:
+    transform 220ms ease,
+    background 220ms ease,
+    border-color 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.services-page__hero-step::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  border-radius: inherit;
+  background:
+    linear-gradient(
+      115deg,
+      transparent 12%,
+      rgba(74, 222, 128, 0) 28%,
+      rgba(74, 222, 128, 0.18) 40%,
+      rgba(255, 255, 255, 0.86) 48%,
+      rgba(74, 222, 128, 0.72) 56%,
+      rgba(74, 222, 128, 0.2) 66%,
+      transparent 82%
+    );
+  background-size: 220% 100%;
+  background-position: 150% 0;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.services-page__hero-step:hover,
+.services-page__hero-step:focus-visible {
+  transform: translateY(-3px);
+  border-color: rgba(74, 222, 128, 0.2);
+  background: rgba(255, 255, 255, 0.085);
+  box-shadow: 0 18px 34px rgba(8, 6, 18, 0.24);
+}
+
+.services-page__hero-step:hover::after,
+.services-page__hero-step:focus-visible::after {
+  opacity: 1;
+  animation: services-hero-step-shimmer 3.1s cubic-bezier(0.22, 1, 0.36, 1) 1;
+}
+
+.services-page__hero-step:focus-visible {
+  outline: none;
 }
 
 .services-page__hero-step span {
@@ -1623,6 +1680,22 @@ p {
 
 .services-page__hero-step p {
   color: rgba(255, 255, 255, 0.92);
+}
+
+@keyframes services-hero-step-shimmer {
+  0% {
+    opacity: 0;
+    background-position: 150% 0;
+  }
+
+  16% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    background-position: -40% 0;
+  }
 }
 
 .services-page__problem-grid {
@@ -1705,6 +1778,7 @@ p {
 
 .services-page__process-track .process-card {
   gap: 0.9rem;
+  scroll-margin-top: 120px;
 }
 
 .services-page__process-track {

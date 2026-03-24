@@ -10,7 +10,7 @@ classes:
 <section class="hero-section services-page__hero">
   <div class="shell hero-section__inner">
     <div class="hero-section__copy">
-      <p class="section-label section-label--hero">Dein Weg zur neuen Website</p>
+      <p class="section-label section-label--hero"><span class="status-dot" aria-hidden="true"></span>Dein Weg zur neuen Website</p>
       <h1>Websites, die verkaufen. Systematisch aufgebaut.</h1>
       <p class="hero-section__subtitle">Wir entwickeln keine einzelnen Leistungen.<br>Wir bauen ein System, das darauf ausgelegt ist, Vertrauen zu schaffen und konstant Anfragen zu generieren.</p>
 
@@ -22,30 +22,30 @@ classes:
 
     <aside class="hero-board services-page__hero-board" aria-label="Systemaufbau">
       <div class="services-page__hero-steps">
-        <article class="services-page__hero-step">
+        <a class="services-page__hero-step" href="#service-step-01">
           <span>01</span>
           <p>Analyse &amp; Positionierung</p>
-        </article>
-        <article class="services-page__hero-step">
+        </a>
+        <a class="services-page__hero-step" href="#service-step-02">
           <span>02</span>
           <p>Vertrauensaufbau durch Design</p>
-        </article>
-        <article class="services-page__hero-step">
+        </a>
+        <a class="services-page__hero-step" href="#service-step-03">
           <span>03</span>
           <p>Technisch starke Umsetzung</p>
-        </article>
-        <article class="services-page__hero-step">
+        </a>
+        <a class="services-page__hero-step" href="#service-step-04">
           <span>04</span>
           <p>Struktur für Sichtbarkeit (SEO)</p>
-        </article>
-        <article class="services-page__hero-step">
+        </a>
+        <a class="services-page__hero-step" href="#service-step-05">
           <span>05</span>
           <p>Domain, Hosting &amp; Launch</p>
-        </article>
-        <article class="services-page__hero-step">
+        </a>
+        <a class="services-page__hero-step" href="#service-step-06">
           <span>06</span>
           <p>Laufende Optimierung &amp; Support</p>
-        </article>
+        </a>
       </div>
     </aside>
   </div>
@@ -101,42 +101,42 @@ classes:
     </div>
 
     <div class="process-track services-page__process-track">
-      <article class="process-card">
+      <article class="process-card" id="service-step-01">
         <p class="process-card__number">01</p>
         <h3>Analyse &amp; Positionierung</h3>
         <p>Wir schauen uns an, wo du aktuell stehst, wie du wahrgenommen wirst und wo du Kunden verlierst.</p>
         <p>Wir schärfen deine Positionierung so, dass klar wird:<br>warum du die richtige Wahl bist und warum man sich jetzt melden sollte.</p>
       </article>
 
-      <article class="process-card">
+      <article class="process-card" id="service-step-02">
         <p class="process-card__number">02</p>
         <h3>Vertrauensaufbau durch Design</h3>
         <p>Design ist für uns kein Stilmittel, sondern ein Werkzeug.</p>
         <p>Wir entwickeln eine visuelle Struktur, die:<br>klar verständlich ist, Vertrauen aufbaut und den Blick gezielt führt.</p>
       </article>
 
-      <article class="process-card">
+      <article class="process-card" id="service-step-03">
         <p class="process-card__number">03</p>
         <h3>Technisch starke Umsetzung</h3>
         <p>Eine Website muss nicht nur gut aussehen, sondern zuverlässig funktionieren.</p>
         <p>Wir setzen dein Projekt performant, stabil und skalierbar um,<br>ohne unnötige Komplexität.</p>
       </article>
 
-      <article class="process-card">
+      <article class="process-card" id="service-step-04">
         <p class="process-card__number">04</p>
         <h3>Struktur für Sichtbarkeit (SEO)</h3>
         <p>Wir bauen deine Website so auf, dass sie gefunden werden kann,<br>nicht nur technisch, sondern auch inhaltlich.</p>
         <p>Klare Seitenstruktur, richtige Inhalte, saubere Basis.</p>
       </article>
 
-      <article class="process-card">
+      <article class="process-card" id="service-step-05">
         <p class="process-card__number">05</p>
         <h3>Domain, Hosting &amp; Launch</h3>
         <p>Eine Website ist erst dann fertig, wenn sie sauber online geht und stabil läuft.</p>
         <p>Wir kümmern uns um Domain, Hosting, technische Einrichtung und Livegang, damit am Ende alles bereit ist und nichts liegen bleibt.</p>
       </article>
 
-      <article class="process-card">
+      <article class="process-card" id="service-step-06">
         <p class="process-card__number">06</p>
         <h3>Laufende Optimierung &amp; Support</h3>
         <p>Eine gute Website ist kein einmaliges Projekt.</p>

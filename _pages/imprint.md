@@ -12,7 +12,7 @@ classes:
 <section class="hero-section legal-page__hero">
   <div class="shell hero-section__inner legal-page__hero-inner">
     <div class="hero-section__copy legal-page__hero-copy">
-      <p class="section-label section-label--hero">Rechtliches</p>
+      <p class="section-label section-label--hero"><span class="status-dot" aria-hidden="true"></span>Rechtliches</p>
       <h1>Impressum</h1>
       <p class="hero-section__subtitle">Anbieterkennzeichnung und rechtliche Hinweise für den gemeinsamen Auftritt von Simon Kröner und Per Starke.</p>
     </div>
@@ -23,7 +23,7 @@ classes:
   <div class="shell legal-page__grid">
     <aside class="legal-page__aside">
       <div class="legal-page__aside-card">
-        <p class="section-label section-label--dark">Schnellnavigation</p>
+        <p class="section-label section-label--dark"><span class="status-dot" aria-hidden="true"></span>Schnellnavigation</p>
         <ul class="legal-page__anchor-list">
           <li><a href="#anbieter">Anbieter</a></li>
           <li><a href="#kontakt">Kontakt</a></li>
@@ -51,13 +51,13 @@ classes:
         <p>{{ legal.operator_name }} ist ein gemeinsamer Auftritt von {{ simon.name }} und {{ per.name }}. Angaben zu den verantwortlichen Personen und Unternehmen:</p>
         <div class="legal-entity-grid">
           <article class="legal-entity-card">
-            <p class="section-label section-label--dark">Schweizer Vertragspartner</p>
+            <p class="section-label section-label--dark"><span class="status-dot" aria-hidden="true"></span>Schweizer Vertragspartner</p>
             <h3>{{ simon.business_name }}</h3>
             <p>{{ simon.name }}<br>{{ simon.address_line_1 }}<br>{{ simon.postal_city }}<br>{{ simon.country }}</p>
             <p>E-Mail: <a href="mailto:{{ simon.email }}">{{ simon.email }}</a><br>Telefon: <a href="tel:{{ simon.phone | replace: ' ', '' }}">{{ simon.phone }}</a><br>Website: <a href="{{ simon.website }}" target="_blank" rel="noopener noreferrer">{{ simon.website | replace: 'https://', '' }}</a></p>
           </article>
           <article class="legal-entity-card">
-            <p class="section-label section-label--dark">Technischer Umsetzungspartner</p>
+            <p class="section-label section-label--dark"><span class="status-dot" aria-hidden="true"></span>Technischer Umsetzungspartner</p>
             <h3>{{ per.business_name }}</h3>
             <p>{{ per.name }}<br>{{ per.address_line_1 }}<br>{{ per.postal_city }}<br>{{ per.country }}</p>
             <p>E-Mail: <a href="mailto:{{ per.email }}">{{ per.display_email }}</a><br>Telefon: <a href="tel:{{ per.phone | replace: ' ', '' }}">{{ per.phone }}</a><br>Website: <a href="{{ per.website }}" target="_blank" rel="noopener noreferrer">{{ per.website | replace: 'https://', '' }}</a></p>

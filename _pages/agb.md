@@ -12,7 +12,7 @@ classes:
 <section class="hero-section legal-page__hero">
   <div class="shell hero-section__inner legal-page__hero-inner">
     <div class="hero-section__copy legal-page__hero-copy">
-      <p class="section-label section-label--hero">Rechtliches</p>
+      <p class="section-label section-label--hero"><span class="status-dot" aria-hidden="true"></span>Rechtliches</p>
       <h1>AGB</h1>
       <p class="hero-section__subtitle">Allgemeine Geschäftsbedingungen für Angebote, Projekte und laufende Zusammenarbeit im Rahmen von {{ legal.contracting_business }}.</p>
     </div>
@@ -23,7 +23,7 @@ classes:
   <div class="shell legal-page__grid">
     <aside class="legal-page__aside">
       <div class="legal-page__aside-card">
-        <p class="section-label section-label--dark">Schnellnavigation</p>
+        <p class="section-label section-label--dark"><span class="status-dot" aria-hidden="true"></span>Schnellnavigation</p>
         <ul class="legal-page__anchor-list">
           <li><a href="#geltungsbereich">Geltungsbereich</a></li>
           <li><a href="#vertragsgegenstand">Vertragsgegenstand</a></li>

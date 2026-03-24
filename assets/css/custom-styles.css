@@ -1008,6 +1008,16 @@ p {
   font-size: 0.88em;
 }
 
+.portfolio-section__cta {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 0.15rem;
+}
+
+.portfolio-section__heading {
+  margin-bottom: clamp(28px, 3.2vw, 40px);
+}
+
 .testimonial-carousel {
   display: grid;
   gap: 1.25rem;

@@ -133,6 +133,9 @@ portfolio:
   label: ""
   title: "Einblick in unsere Arbeit"
   intro: ""
+  cta:
+    label: "Gesamtes Portfolio öffnen"
+    url: "/projekte/"
   projects:
     - slug: "onward-recruiting"
       name: "Onward Recruiting"

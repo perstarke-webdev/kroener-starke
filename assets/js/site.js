@@ -86,6 +86,7 @@
       { selector: "#leistungen .process-card", step: 65 },
       { selector: "#arbeiten .section-heading > *", step: 55 },
       { selector: "#arbeiten .project-card", step: 70 },
+      { selector: "#arbeiten .portfolio-section__cta", step: 0 },
       { selector: "#stimmen .section-heading > *", step: 55 },
       { selector: "#stimmen .testimonial-carousel", step: 0 },
       { selector: "#framework .framework-card > *", step: 70 },

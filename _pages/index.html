@@ -154,7 +154,7 @@ classes:
 
 <section class="section section--white" id="arbeiten">
   <div class="shell">
-    <div class="section-heading">
+    <div class="section-heading portfolio-section__heading">
       {% if home.portfolio.label != blank %}
         <p class="section-label section-label--dark"><span class="status-dot" aria-hidden="true"></span>{{ home.portfolio.label }}</p>
       {% endif %}
@@ -162,6 +162,9 @@ classes:
       {% if home.portfolio.intro %}
         <p class="section-lead">{{ home.portfolio.intro }}</p>
       {% endif %}
+      <div class="portfolio-section__cta">
+        <a class="button button--secondary" href="{{ home.portfolio.cta.url | relative_url }}">{{ home.portfolio.cta.label }}</a>
+      </div>
     </div>
 
     {% include project_showcase.html projects=featured_projects dialog_prefix="home-project" %}

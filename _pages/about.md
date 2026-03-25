@@ -14,7 +14,7 @@ classes:
       <h1>Zwei Stärken. Ein klares Ziel.</h1>
       <p class="hero-section__subtitle">Kröner &amp; Starke verbindet zwei Perspektiven, die selten wirklich zusammenkommen:<br>Vertriebs- und Kundenpsychologie auf der einen Seite, tiefes Verständnis von Design und Technik auf der anderen.</p>
       <div class="about-page__hero-text">
-        <p class="section-lead section-lead--light">Wir bauen Websites nicht als Designprojekt, sondern als Werkzeug für Wachstum.</p>
+        <p class="section-lead section-lead--light">Wir bauen Websites nicht nur als Designprojekt, sondern als Werkzeug für Wachstum.</p>
         <p class="section-lead section-lead--light">Jede Entscheidung folgt dabei einem einfachen Ziel: Vertrauen schaffen und Anfragen generieren.</p>
       </div>
     </div>

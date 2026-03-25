@@ -307,6 +307,7 @@
     var cards = document.querySelectorAll(
       ".about-page__why-card, .services-page__system-panel, .services-page__system-pillars, .services-page__process-track .process-card"
     );
+    var tiltIntensity = 7.8;
     var canHover =
       window.matchMedia &&
       window.matchMedia("(hover: hover) and (pointer: fine)").matches;
@@ -352,7 +353,7 @@
         var relativeX = (event.clientX - bounds.left) / bounds.width - 0.5;
         var relativeY = (event.clientY - bounds.top) / bounds.height - 0.5;
 
-        queueTilt(relativeY * -6, relativeX * 6);
+        queueTilt(relativeY * -tiltIntensity, relativeX * tiltIntensity);
       });
 
       card.addEventListener("mouseleave", resetTilt);

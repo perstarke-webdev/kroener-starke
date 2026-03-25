@@ -1394,6 +1394,11 @@ p {
   margin-inline: auto;
 }
 
+.portfolio-page__hero-copy .hero-section__subtitle,
+.portfolio-page__hero-copy .hero-section__support {
+  margin-inline: auto;
+}
+
 .portfolio-page__hero h1,
 .contact-page__hero h1,
 .legal-page__hero h1 {

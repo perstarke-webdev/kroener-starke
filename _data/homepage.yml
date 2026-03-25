@@ -25,7 +25,7 @@ hero:
 pain:
   title: "Wenn deine Website nicht verkauft, verlierst du jeden Tag potenzielle Kunden."
   intro: ""
-  audit_title: "Veraltete Website oder keine Anfragen?"
+  audit_title: "Veraltete Website oder zu wenig Anfragen?"
   audit_text: "Hol dir einen kostenlosen Website-Check und wir zeigen dir, wo du aktuell Kunden verlierst."
   bullet_points: []
   form:
@@ -106,7 +106,7 @@ trust:
 
 services:
   label: ""
-  title: "Wir machen eine Sache: Websites, die wirken."
+  title: "Wir machen eine Sache: Websites, die Eindruck hinterlassen."
   intro: "Alles, was wir tun, zahlt darauf ein. Wir kombinieren Strategie, Design und Umsetzung zu einem System, das dir konstant neue Anfragen bringt und dich im besten Licht darstellt."
   track_label: "So entsteht deine neue Website:"
   steps:

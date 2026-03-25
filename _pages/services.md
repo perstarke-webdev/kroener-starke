@@ -97,7 +97,7 @@ classes:
 <section class="section section--cream services-page__process">
   <div class="shell">
     <div class="section-heading">
-      <h2>So entsteht deine Website</h2>
+      <h2>So entsteht deine Branding- und Verkaufsmaschine</h2>
     </div>
 
     <div class="process-track services-page__process-track">

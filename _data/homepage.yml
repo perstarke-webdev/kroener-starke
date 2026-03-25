@@ -261,7 +261,7 @@ about:
     url: "/ueber-uns/"
 
 final_cta:
-  label: ""
+  label: "Jetzt durchstarten"
   title: "Bereit für deine neue Website?"
   text: "Wir bauen dir eine moderne Website, die Vertrauen schafft, dich im besten Licht darstellt und konstant neue Anfragen bringt."
   primary_cta:

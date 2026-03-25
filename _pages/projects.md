@@ -7,6 +7,7 @@ classes:
 ---
 {% assign home = site.data.homepage %}
 {% assign projects = site.data.projects %}
+{% assign legal = site.data.legal %}
 
 <section class="hero-section portfolio-page__hero">
   <div class="shell hero-section__inner portfolio-page__hero-inner">
@@ -15,6 +16,12 @@ classes:
       <h1>Einblick in unsere Arbeit</h1>
       <p class="hero-section__subtitle">Websites, die nicht nur gut aussehen, sondern Ergebnisse bringen.</p>
       <p class="hero-section__support">Jedes Projekt folgt derselben Logik: Vertrauen aufbauen, Klarheit schaffen und Anfragen generieren.</p>
+      <div class="hero-section__actions portfolio-page__hero-actions">
+        <a class="button button--secondary" href="mailto:{{ legal.simon.email }}?subject=Mehr%20Referenzen%20auf%20Anfrage">
+          Mehr Referenzen auf Anfrage
+          <span class="inline-icon inline-icon--external" aria-hidden="true">&#8599;</span>
+        </a>
+      </div>
     </div>
   </div>
 </section>
@@ -28,6 +35,9 @@ classes:
 <section class="section section--deep section--cta portfolio-page__cta" id="cta">
   <div class="shell cta-grid">
     <div class="section-copy">
+      {% if home.final_cta.label != blank %}
+        <p class="section-label section-label--light"><span class="status-dot" aria-hidden="true"></span>{{ home.final_cta.label }}</p>
+      {% endif %}
       <h2>{{ home.final_cta.title }}</h2>
       <p class="section-lead section-lead--light">{{ home.final_cta.text }}</p>
       <a class="button button--light" href="{{ home.final_cta.primary_cta.url | relative_url }}">{{ home.final_cta.primary_cta.label }}</a>

@@ -303,6 +303,63 @@
     });
   }
 
+  function initAboutWhyTilt() {
+    var cards = document.querySelectorAll(
+      ".about-page__why-card, .services-page__system-panel, .services-page__system-pillars, .services-page__process-track .process-card"
+    );
+    var canHover =
+      window.matchMedia &&
+      window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+
+    if (!cards.length || prefersReducedMotion || !canHover) {
+      return;
+    }
+
+    cards.forEach(function (card) {
+      var frameId = null;
+      var nextRotateX = 0;
+      var nextRotateY = 0;
+
+      function applyTilt() {
+        card.style.setProperty(
+          "--why-card-rotate-x",
+          nextRotateX.toFixed(2) + "deg"
+        );
+        card.style.setProperty(
+          "--why-card-rotate-y",
+          nextRotateY.toFixed(2) + "deg"
+        );
+        frameId = null;
+      }
+
+      function queueTilt(rotateX, rotateY) {
+        nextRotateX = rotateX;
+        nextRotateY = rotateY;
+
+        if (frameId !== null) {
+          return;
+        }
+
+        frameId = window.requestAnimationFrame(applyTilt);
+      }
+
+      function resetTilt() {
+        queueTilt(0, 0);
+      }
+
+      card.addEventListener("mousemove", function (event) {
+        var bounds = card.getBoundingClientRect();
+        var relativeX = (event.clientX - bounds.left) / bounds.width - 0.5;
+        var relativeY = (event.clientY - bounds.top) / bounds.height - 0.5;
+
+        queueTilt(relativeY * -6, relativeX * 6);
+      });
+
+      card.addEventListener("mouseleave", resetTilt);
+      card.addEventListener("blur", resetTilt);
+    });
+  }
+
   function parseDomain(value) {
     var input = (value || "").trim();
     var normalized = input;
@@ -839,6 +896,7 @@
     initHeaderScroll();
     initNav();
     initCountUp();
+    initAboutWhyTilt();
     initForms();
     initProjectForms();
     initDialogs();

@@ -182,7 +182,7 @@ button {
 
 .section,
 .hero-section,
-.placeholder-page {
+.not-found-page {
   position: relative;
   padding: var(--section-gap) 0;
 }
@@ -2160,26 +2160,46 @@ p {
   color: var(--color-ink-muted);
 }
 
-.placeholder-page {
+.not-found-page {
   min-height: calc(100vh - 240px);
   display: grid;
   align-items: center;
 }
 
-.placeholder-page__inner {
+.not-found-page__inner {
   display: grid;
-  gap: 1.3rem;
-  max-width: 820px;
+  gap: 1.4rem;
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.placeholder-page__panel {
-  display: grid;
-  gap: 1rem;
-  padding: clamp(22px, 3vw, 28px);
-  border: 1px solid rgba(124, 58, 237, 0.14);
-  border-radius: 24px;
-  background: rgba(255, 255, 255, 0.8);
-  box-shadow: var(--shadow-soft);
+.not-found-page__inner .section-label,
+.not-found-page__inner .hero-section__subtitle,
+.not-found-page__inner h1,
+.not-found-page__note {
+  margin-inline: auto;
+}
+
+.not-found-page h1 {
+  max-width: 9ch;
+}
+
+.not-found-page__actions {
+  justify-content: center;
+  margin-top: 0.2rem;
+}
+
+.not-found-page__note {
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 0.98rem;
+}
+
+.not-found-page__note a {
+  color: var(--color-white);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
 }
 
 .site-footer__topbar {
@@ -2491,8 +2511,7 @@ p {
   .person-card,
   .testimonial-slide,
   .legal-page__aside-card,
-  .legal-section,
-  .placeholder-page__panel {
+  .legal-section {
     border-radius: 20px;
   }
 

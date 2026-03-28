@@ -6,22 +6,15 @@ hide: true
 noindex: true
 ---
 
-<section class="placeholder-page placeholder-page--404">
-  <div class="shell placeholder-page__inner">
-    <p class="section-label section-label--dark">404</p>
-    <h1>Diese Seite ist nicht da, wo sie sein sollte.</h1>
-    <p class="section-lead">Der Link ist entweder veraltet oder die Seite wird gerade noch gebaut. Die Startseite ist bereits bereit für dich.</p>
-    <div class="placeholder-page__panel">
-      <h2>Was du jetzt tun kannst</h2>
-      <ul class="check-list">
-        <li><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><span>Zur Homepage zurückkehren</span></li>
-        <li><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><span>Die Projektbeispiele ansehen</span></li>
-        <li><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><span>Einen Website-Check anfragen</span></li>
-      </ul>
-    </div>
-    <div class="hero-section__actions">
+<section class="not-found-page">
+  <div class="shell not-found-page__inner">
+    <p class="section-label section-label--hero">404</p>
+    <h1>Diese Seite gibt es hier nicht.</h1>
+    <p class="hero-section__subtitle">Der Link ist veraltet, falsch oder die Seite wurde verschoben. Auf der Startseite findest du den aktuellen Einstieg.</p>
+    <div class="hero-section__actions not-found-page__actions">
       <a class="button button--primary" href="{{ '/' | relative_url }}">Zur Startseite</a>
-      <a class="button button--secondary" href="{{ '/' | relative_url }}#cta">Website prüfen lassen</a>
+      <a class="button button--secondary" href="{{ '/projekte/' | relative_url }}">Projekte ansehen</a>
     </div>
+    <p class="not-found-page__note">Oder direkt <a href="{{ '/kontakt/' | relative_url }}">Projekt anfragen</a>.</p>
   </div>
 </section>

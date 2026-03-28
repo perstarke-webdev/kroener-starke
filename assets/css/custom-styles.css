@@ -2176,13 +2176,23 @@ p {
 
 .not-found-page__inner .section-label,
 .not-found-page__inner .hero-section__subtitle,
+.not-found-page__inner .hero-section__support,
 .not-found-page__inner h1,
 .not-found-page__note {
   margin-inline: auto;
 }
 
 .not-found-page h1 {
-  max-width: 9ch;
+  max-width: 10ch;
+}
+
+.not-found-page .hero-section__subtitle {
+  max-width: 30ch;
+}
+
+.not-found-page .hero-section__support {
+  max-width: 48ch;
+  color: rgba(255, 255, 255, 0.78);
 }
 
 .not-found-page__actions {

@@ -1,3 +1,30 @@
+- slug: "elevate-duesseldorf"
+  featured: true
+  name: "ELEVATE Düsseldorf"
+  summary: "Kompletter Rebrand, der Performance, Premium-Anspruch und Community in einen starken neuen Auftritt übersetzt."
+  result: "Kompletter Rebrand von CrossFit am Rhein zu ELEVATE Düsseldorf: Logo, Branding und Website"
+  website_url: "https://www.elevate-gym.de/"
+  cover: "/assets/images/projects/elevate-duesseldorf-1.webp"
+  cover_alt: "Neuer Marken- und Website-Auftritt von ELEVATE Düsseldorf"
+  width: 3386
+  height: 1930
+  gallery:
+    - src: "/assets/images/projects/elevate-duesseldorf-1.webp"
+      alt: "ELEVATE Düsseldorf neuer Website- und Markenauftritt"
+      caption: "Der neue Auftritt verbindet Performance, Premium-Anspruch und klare Nutzerführung in einer deutlich stärkeren Markenwelt."
+      width: 3386
+      height: 1930
+    - src: "/assets/images/projects/elevate-duesseldorf-2.webp"
+      alt: "ELEVATE Düsseldorf neues Logo"
+      caption: "Zum Rebrand gehörte nicht nur die Website, sondern auch das neue Logo als klare visuelle Basis für ELEVATE Düsseldorf."
+      width: 2129
+      height: 1690
+    - src: "/assets/images/projects/elevate-duesseldorf-3.webp"
+      alt: "Vorheriger Website-Auftritt vor dem Rebrand von ELEVATE Düsseldorf"
+      caption: "BEFORE: Vor dem Rebrand wirkte der bisherige Webauftritt deutlich generischer und transportierte die neue Positionierung noch nicht klar genug."
+      width: 3386
+      height: 2096
+
 - slug: "onward-recruiting"
   featured: true
   name: "Onward Recruiting"
@@ -52,33 +79,6 @@
       width: 3420
       height: 1976
 
-- slug: "wikus-programming"
-  featured: true
-  name: "WIKUS Programming"
-  summary: "Coaching-Auftritt, der Struktur, Community und Shop zu einem klaren digitalen System verbindet."
-  result: ""
-  website_url: "https://wikus-programming.com/"
-  cover: "/assets/images/projects/wikus-programming-1.webp"
-  cover_alt: "Startseite von WIKUS Programming"
-  width: 3420
-  height: 1972
-  gallery:
-    - src: "/assets/images/projects/wikus-programming-1.webp"
-      alt: "WIKUS Programming Hero"
-      caption: "Der Einstieg verbindet Professionalität und Nahbarkeit, damit Coaching, Haltung und Anfrageweg sofort klar werden."
-      width: 3420
-      height: 1972
-    - src: "/assets/images/projects/wikus-programming-2.webp"
-      alt: "WIKUS Programming Angebotsübersicht"
-      caption: "Struktur, Programme und Markenwelt greifen sauber ineinander und geben der wachsenden Community klare Orientierung."
-      width: 3390
-      height: 1868
-    - src: "/assets/images/projects/wikus-programming-3.webp"
-      alt: "WIKUS Programming weitere Detailansicht"
-      caption: "Website und Shop wirken wie ein zusammenhängendes System statt wie zwei getrennte Erlebnisse."
-      width: 3390
-      height: 1868
-
 - slug: "struve-international-recruiting"
   featured: true
   name: "Struve International Recruiting"
@@ -105,6 +105,33 @@
       caption: "Team, Erklärung und häufige Fragen bauen ab dem ersten Besuch gezielt Vertrauen auf."
       width: 3398
       height: 1974
+
+- slug: "wikus-programming"
+  featured: true
+  name: "WIKUS Programming"
+  summary: "Coaching-Auftritt, der Struktur, Community und Shop zu einem klaren digitalen System verbindet."
+  result: ""
+  website_url: "https://wikus-programming.com/"
+  cover: "/assets/images/projects/wikus-programming-1.webp"
+  cover_alt: "Startseite von WIKUS Programming"
+  width: 3420
+  height: 1972
+  gallery:
+    - src: "/assets/images/projects/wikus-programming-1.webp"
+      alt: "WIKUS Programming Hero"
+      caption: "Der Einstieg verbindet Professionalität und Nahbarkeit, damit Coaching, Haltung und Anfrageweg sofort klar werden."
+      width: 3420
+      height: 1972
+    - src: "/assets/images/projects/wikus-programming-2.webp"
+      alt: "WIKUS Programming Angebotsübersicht"
+      caption: "Struktur, Programme und Markenwelt greifen sauber ineinander und geben der wachsenden Community klare Orientierung."
+      width: 3390
+      height: 1868
+    - src: "/assets/images/projects/wikus-programming-3.webp"
+      alt: "WIKUS Programming weitere Detailansicht"
+      caption: "Website und Shop wirken wie ein zusammenhängendes System statt wie zwei getrennte Erlebnisse."
+      width: 3390
+      height: 1868
 
 - slug: "kerem-hillel"
   featured: false

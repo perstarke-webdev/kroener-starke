@@ -21,7 +21,7 @@
       height: 1690
     - src: "/assets/images/projects/elevate-duesseldorf-3.webp"
       alt: "Vorheriger Website-Auftritt vor dem Rebrand von ELEVATE Düsseldorf"
-      caption: "BEFORE: Vor dem Rebrand wirkte der bisherige Webauftritt deutlich generischer und transportierte die neue Positionierung noch nicht klar genug."
+      caption: "Vorher: Vor dem Rebrand wirkte der Auftritt weniger professionell, veraltet und transportierte den Anspruch an Qualität, Performance und Community noch nicht klar genug."
       width: 3386
       height: 2096
 
@@ -107,7 +107,7 @@
       height: 1974
 
 - slug: "wikus-programming"
-  featured: true
+  featured: false
   name: "WIKUS Programming"
   summary: "Coaching-Auftritt, der Struktur, Community und Shop zu einem klaren digitalen System verbindet."
   result: ""
